@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Calvin | Web Architect</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('/background.png') center center fixed;
+      background-size: cover;
+      background-repeat: repeat;
+      color: #fdfdfd;
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(1, 13, 93, 0.85);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(170, 0, 255, 0.25);
+    }
+    .logo-placeholder img {
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      color: #11dade;
+    }
+    section {
+      padding: 3rem 5%;
+      background: rgba(0, 0, 0, 0.75);
+      animation: fadeIn 1s ease-out both;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #00ffff;
+      margin-bottom: 1rem;
+    }
+    .projects, .skills {
+      display: grid;
+      gap: 2rem;
+    }
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background: linear-gradient(145deg, #000333, #001144);
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #00eaff;
+      font-weight: 600;
+    }
+    .card a {
+      color: #b3f5ff;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.25rem; }
+      section { padding: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-placeholder">
+      <img src="githubprofile.png" alt="Logo">
+    </div>
+    <h1>Robert Calvin</h1>
+    <p>Web Architect & AI-Driven Brand Engineer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I create high-impact, responsive digital experiences that drive real-world results. My focus is clean code, elegant design, and performance at scale. I combine modern front-end precision with backend flexibility and AI-powered tools that elevate every deliverable beyond expectation.</p>
+  </section>
+
+  <section>
+    <h2>Why I'm Right for This Job</h2>
+    <p>As a developer with cross-functional skills in design, automation, and content systems, I’ve built launch-critical web platforms under intense deadlines. I work fast, communicate clearly, and solve problems before they become visible. I understand campaign urgency and the nuance of branding in high-visibility environments. I’m not here to experiment — I’m here to deliver production-grade results with the polish of a product that was built to last.</p>
+  </section>
+
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3><a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen Creative</a></h3>
+        <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product filtering, loyalty system, and SEO-rich product descriptions.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/robert-calvin-dev/the-pour-choice" target="_blank">The Pour Choice</a></h3>
+        <p>Responsive wine education site with quizzes, interactive lessons, and recipe pairings. Designed to make content fun, engaging, and mobile-friendly.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/robert-calvin-dev/seo-auditor" target="_blank">SEO Auditor</a></h3>
+        <p>Python CLI app that scans site structure, metadata, load speed, and image ALT attributes. Generates actionable reports for immediate SEO gains.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/robert-calvin-dev/calorie-tracker" target="_blank">Calorie Tracker CLI</a></h3>
+        <p>Nutrition-tracking tool using real-time Nutritionix API queries. Tracks TDEE, meals, calorie deficits, and weight projection. Lightweight. Dependable. Built from scratch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <p>HTML5, CSS3, JavaScript, PHP, WordPress, WooCommerce, AI SEO, Git, Tailwind, Bootstrap, Python3, Flask, Adobe Creative Suite, REST APIs, Chatbots</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/robert-calvin-dev" target="_blank">github.com/robert-calvin-dev</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
+  </footer>
+</body>
+</html>
