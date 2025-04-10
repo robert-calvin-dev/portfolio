@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html id="theme-html" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Calvin | Web Architect</title>
+  <link rel="stylesheet" href="/styles/themes.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/components.css">
+</head>
+<style>
+  main {
+    margin: auto;
+  }
+  .aboutPage {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .left {
+    width: 60%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+  }
+  .statement {
+    width: 90%;
+  }
+  .statement strong {
+    color: var(--accent);
+  }
+
+  .download-button button {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-button button:hover {
+  background: var(--h1shadow);
+}
+
+.wheels {
+  align-self: flex-start;
+}
+
+  @media (max-width: 760px) {
+    body {
+      margin:auto;
+    }
+    .aboutPage {
+      flex-direction: column;
+    }
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+    .wheels {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+</style>
+<body>
+  <div id="headerContainer"></div>
+    <div class="aboutPage">
+    <div class="left">
+      <img src="">
+      <p class="statement"><strong>My Name is Robert Calvin — and I'm a designer, developer, and storyteller inspired by color, clarity, and the power of creative connection.</strong><br><br> My work lives at the intersection of art and utility. I design with emotion, write with intention, and build with purpose. Whether I’m coding a custom site, designing bold visual branding, or rewriting a resume to tell someone’s story, my goal is the same: help people feel seen, understood, and empowered.<br><br> Creativity has always been my outlet — a way to transform ideas into something tangible, expressive, and useful. I find beauty in the abstract, balance in clean design, and meaning in every color, shape, and line. I draw inspiration from people — their stories, their struggles, their vision — and I use that to craft work that doesn’t just “look good,” but makes people feel something.<br><br> This isn’t just about websites or resumes or graphics. This is about helping people present their best, most authentic selves to the world — and making sure that world pays attention.</p>
+    </div>
+    <div class="right">
+      <a href="/images/Robert Calvin.pdf" download class="download-button">
+        <button type="button">📄 Download My Resume</button>
+      </a>
+      <br>
+      <br>
+      <div class="wheels">
+        <img class="wheel" data-image-key="html" src="/images/light/html.png" alt="HTML progress wheel">
+        <img class="wheel" data-image-key="css" src="/images/light/css.png" alt="CSS progress wheel">
+        <img class="wheel" data-image-key="js" src="/images/light/js.png" alt="Javascript progress wheel">
+        <img class="wheel" data-image-key="python" src="/images/light/python.png" alt="Python progress wheel">
+        <img class="wheel" data-image-key="bash" src="/images/light/bash.png" alt="Bash progress wheel">
+        <img class="wheel" data-image-key="php" src="/images/light/php.png" alt="PHP progress wheel">
+      </div>
+    </div>
+  </div>
+<div id="footerContainer"></div>
+ <script src="/scripts/themetoggle.js"></script>
+ <script src="/scripts/template.js"></script>
+</body>
+</html>

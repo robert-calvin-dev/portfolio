@@ -1,0 +1,79 @@
+:root {
+ --bgblend: #ccdcffce;
+ --bodybg: #ffffff;
+ --bg: #ffffff;
+ --a: #2718f6;
+ --text: #000000;
+ --accent: #00b7ff;
+ --h1: #000000;
+ --h1outline: #00b7ff;
+ --h1shadow: rgb(77, 0, 242);
+ --primary: rgb(181, 218, 255);
+ --highlight: rgba(153, 254, 180, 0.614);
+ --shadow: rgb(255, 255, 255);
+ --header-image-shadow: rgb(145, 255, 213);
+ --header-image-border: 2px dotted rgb(9, 242, 188);
+ --header-gradient-start: #fff;
+ --header-gradient-end: #5dbeff9c;
+ --header-shadow: #000;
+ --header-border: 1px solid black;
+ --card-gradient-start: #65f6f1e5;
+ --card-gradient-end: #6004ea41;
+ --card-shadow: rgb(255, 255, 255);
+ --card-hover-shadow: rgb(0, 194, 242);
+ --title: #000;
+ --paragraph : #000;
+}
+
+[data-theme="dark"] {
+ --bgblend: #4f003ace;
+ --bodybg: #111010;
+ --bg: #000000;
+ --a: rgb(240, 2, 153);
+ --text: #ffffff;
+ --accent: #ffffff;
+ --h1: #b8006f;
+ --h1outline: #dc05b1;
+ --h1shadow: rgb(141, 0, 108);
+ --primary: rgb(255, 255, 255);
+ --highlight: rgba(153, 254, 180, 0.614);
+ --shadow: rgb(255, 255, 255);
+ --header-image-shadow: rgb(239, 83, 211);
+ --header-image-border: 2px dotted rgb(184, 9, 242);
+ --header-gradient-start: #000000;
+ --header-gradient-end: #aa0a7a9c;
+ --header-shadow: #000;
+ --header-border: 1px solid #fff;
+ --card-gradient-start: #ff96d556;
+ --card-gradient-end: #23171727;
+ --card-shadow: rgb(238, 58, 160);
+ --card-hover-shadow: rgb(255, 255, 255);
+ --title: #ffffff;
+ --paragraph : #ffffff;
+}
+
+[data-theme="retro"] {
+ --bgblend: #ffffffce;
+ --bodybg: #ff6f6d;
+ --bg: #ff4d00;
+ --a: #ff4d00;
+ --text: #000000;
+ --accent: #ffffff;
+ --h1: #ff4d00;
+ --h1outline: #ffffff;
+ --h1shadow: rgb(141, 0, 108);
+ --primary: rgb(255, 255, 255);
+ --highlight: rgba(153, 254, 180, 0.614);
+ --shadow: rgb(255, 255, 255);
+ --header-image-shadow: rgb(255, 255, 255);
+ --header-image-border: 2px dotted rgb(242, 9, 9);
+ --header-gradient-start: #000000;
+ --header-gradient-end: #aa0a7a9c;
+ --header-shadow: #000;
+ --card-gradient-start: #ffdfb9;
+ --card-gradient-end: #ffffff;
+ --card-shadow: rgb(255, 255, 255);
+ --card-hover-shadow: #ff4d00;
+ --title: #000000;
+ --paragraph : #000000;
+}

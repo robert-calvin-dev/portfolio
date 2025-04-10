@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html id="theme-html" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Calvin | Web Architect</title>
+  <link rel="stylesheet" href="/styles/themes.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/components.css">
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+  <script>
+    let pyodideReady = loadPyodide();
+
+    document.querySelectorAll('.run-sandbox').forEach((button, index) => {
+      button.addEventListener('click', async () => {
+        const input = button.previousElementSibling;
+        const output = button.nextElementSibling;
+        output.textContent = '⏳ Running...';
+        try {
+          const pyodide = await pyodideReady;
+          const result = await pyodide.runPythonAsync(input.value);
+          output.textContent = result || '✅ Finished.';
+        } catch (err) {
+          output.textContent = '❌ Error:\n' + err;
+        }
+      });
+    });
+  </script>
+  <style>
+    p {
+      width: 80%;
+      margin:auto;
+      margin-bottom: 10px;
+    }
+    .blogbanner {
+      border: var(--header-border);
+      border-radius: 16px;
+    }
+    @media (max-width: 960px) {
+      html {
+        font-size: 19px;
+      }
+      body {
+        margin: auto;
+      }
+      .hero {
+        flex-direction: column;
+      }
+      .statement {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+      }
+      .servicecards {
+        flex-direction: column;
+      }
+      .service {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      .sandbox {
+        width: 90%;
+      }
+      .sandboxoutput {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="headerContainer"></div>
+  <main>
+    <section class="hero">
+      <img class=profile data-image-key="profile" src="/images/light/profile.png">
+      <p class="statement"><strong>Hi, I’m Robert Calvin — <br> a graphic designer, writer, web developer and problem solver.</strong><br><br> I help individuals and brands tell their story beautifully and effectively — online and on paper. From striking visuals to persuasive copy to clean, responsive websites, I deliver cohesive creative that feels as good as it looks.</p>
+    </section>
+    <div id="servicesContainer"></div>
+    <section class="featured">
+      <h2>Featured Projects</h2>
+      <div class="project-card">
+        <h3><a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen Creative</a></h3>
+        <div class="card-screenshot-container">
+          <img class="card-screenshot" src="/images/glitterqueenscreenshot.png" alt="Glitter Queen Creative Screenshot">
+        </div>
+        <div class="card">
+          <div class="card-overview">
+
+            <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product filtering,
+              loyalty system, and SEO-rich product descriptions.</p>
+            <div class="skills-used">
+              <ul>
+                <li>WordPress</li>
+                <li>WooCommerce</li>
+                <li>Custom Theme</li>
+                <li>Loyalty System</li>
+                <li>SEO</li>
+                <li>Responsive Design</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="project-card">
+        <h3><a href="/projects.html">Digital Python Sandbox</a></h3>
+        <p>Fully interactive Python sandbox running in-browser using Pyodide. Type code, run it live, and see the output — all without a backend. Built for learning, testing, and showcasing Python logic directly in your portfolio.</p>
+          <div class="sandbox">
+            <h4>Try Python Live</h4>
+            <textarea class="sandbox-input" placeholder="# Type Python code here..."></textarea>
+            <button class="run-sandbox">▶️ Run</button>
+            <pre class="sandbox-output"></pre>
+          </div>
+     
+        <div class="card">
+          <div class="card-overview">
+           
+            <div class="skills-used">
+              <ul>
+                <li>Python</li>
+                <li>Pyodide</li>
+                <li>WebAssembly</li>
+                <li>Browser Execution</li>
+                <li>Frontend Integration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2>Blog</h2>
+      <div class="project-card">
+        <div class="card">
+          <img src="/images/AInsig.png" class="blogbanner">
+          <h2 style="text-align: left;"><a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/">Creative Writing Project</a></h2>
+          <p class="exerpt">Currently very passively working on a story set in a dystopian future where defective AI begin to show symtpoms of mental illness</p>
+          <a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/">Read More...</a>
+         </div>
+      </div>
+    </section>
+<br>
+<br>
+  </main>
+<div id="footerContainer"></div>
+  <br>
+  <script src="/scripts/themetoggle.js"></script>
+  <script src="/scripts/template.js"></script>
+
+</body>
+
+</html>
+
+
