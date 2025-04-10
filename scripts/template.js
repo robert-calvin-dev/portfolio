@@ -9,7 +9,7 @@ function insertHeader() {
     <li><h3><a href="contact.html">Contact</a></h3></li>
   </ul>
   </nav>
-  <a href="/index.html"><img class="logo" data-image-key="logo" src="/images/light/logo.png" alt="Robert Calvin Marketing Logo"></a>
+  <a href="/index.html"><img class="logo" data-image-key="logo" src="images/light/logo.png" alt="Robert Calvin Marketing Logo"></a>
   <img class="headerimage" data-image-key="robot" src="images/light/robot.gif" alt="Robot">
   <br>
   <header id="theme-header">
@@ -55,7 +55,7 @@ function insertServices() {
         </div>
         <div class="service">
           <h3><a href="contact.html">Resume Upgrade</a></h3>
-            <img class="serviceicon" data-image-key="resumes" src="/images/light/resumes.png" alt="Resume Ipgrade Icon">
+            <img class="serviceicon" data-image-key="resumes" src="images/light/resumes.png" alt="Resume Ipgrade Icon">
           <p>Custom Templates, Streamlined Content, Modern & Sophisticated</p><br>
         </div>
       </div>
