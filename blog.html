@@ -1,43 +1,102 @@
 <!DOCTYPE html>
-<html id="theme-html" lang="en">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robert Calvin | Web Architect</title>
+  <title>Blog | Robert Calvin</title>
   <link rel="stylesheet" href="styles/themes.css">
-  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/components.css">
-  <style>
-   .blogpage {
-    width:90%;
-    margin: auto;
-   }
-   .bloglink {
-    color: var(--accent);
-   }
-   .blogbanner {
-    border: var(--header-border);
-   }
-   h2 {
-    text-align: left;
-   }
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
 </head>
-<body>
- <div id="headerContainer"></div>
- <main class="blogpage">
-  <div class="card">
-   <img src="images/AInsig.png" class="blogbanner">
-   <h2><a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/" class="bloglink">Creative Writing Project</a></h2>
-   <p class="exerpt">Currently very passively working on a story set in a dystopian future where defective AI begin to show symptoms of mental illness</p>
-   <a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/" class="bloglink">Read More...</a>"
-  </div>
- </main>
- <div id="blogContainer"></div>
-<div id="footerContainer"></div>
-<script src="scripts/themetoggle.js"></script>
-<script src="scripts/template.js"></script>
+<body class="blur">
+  <header>
+    <div class="navbar">
+      <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
+      <div class="nav">
+        <a href="index.html#about">About</a>
+        <a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contactForm" class="contact-button" id="openModal">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="blogger">
+    <div class="blogposts">
+      <div class="post">
+        <a class="posttitle" href="ethical-hacking-lab.html">🧪 How to Build an Ethical Hacking Lab</a>
+        <p class="exerpt">
+          <strong>Why Every Business Should Care About Penetration Testing</strong><br>
+          Most clients I work with underestimate how exposed their digital assets really are...<br>
+        </p>
+        <ul class="blogskills">
+          <li>Cybersecurity</li>
+          <li>EthicalHacking</li>
+          <li>LabSetup</li>
+        </ul>
+        <h5>Published April 16, 2025</h5>
+      </div>
+
+      <div class="post">
+        <a class="posttitle" href="seo-auditing.html">🔍 SEO Auditing Isn’t Optional Anymore</a>
+        <p class="exerpt">
+          <strong>Why Your Website Might Look Great… But Still Be Invisible</strong><br>
+          You’ve spent thousands on web design. Your branding is clean, your copy’s tight, and yet… no traffic...<br>
+        </p>
+        <ul class="blogskills">
+          <li>SEO</li>
+          <li>ClientEducation</li>
+          <li>Performance</li>
+        </ul>
+        <h5>Published April 16, 2025</h5>
+      </div>
+
+      <div class="post">
+        <a class="posttitle" href="artificial-insignificance.html">🤖 Writing a Novel About AI Addiction</a>
+        <p class="exerpt">
+          <strong>When the Chatbots Break Down, Who Picks Up the Pieces?</strong><br>
+          While most people see AI as tools or threats, I see something else: the capacity to mirror our truths...<br>
+        </p>
+        <ul class="blogskills">
+          <li>Creative Writing</li>
+          <li>AI</li>
+          <li>World Building</li>
+        </ul>
+        <h5>Published April 16, 2025</h5>
+      </div>
+    </div>
+
+    <section style="background-color: var(--backgrounds);">
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content"><button class="modal-close" id="closeModal">&times;</button>
+          <form action="https://formspree.io/f/mqapwbdo" method="POST" class="contact-form">
+            <h2>Start Your Project</h2><label for="name">Name</label><input type="text" id="name" name="name" required
+              placeholder="Your full name"><label for="email">Email</label><input type="email" id="email" name="email"
+              required placeholder="you@example.com"><label for="service">Type of Service</label><select id="service"
+              name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Resume Upgrades">Resume Upgrades</option>
+              <option value="App Development">App Development</option>
+              <option value="Other">Other</option>
+            </select><label for="details">Details (optional)</label><textarea id="details" name="details" rows="5"
+              placeholder="Describe your project in a few sentences"></textarea><button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><br>
+    <a href="tel:+1234567890">236 339 1498</a>
+    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
+    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
+  </footer>
+
+  <script src="scripts/template.js"></script>
+  <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
+
 </body>
 </html>

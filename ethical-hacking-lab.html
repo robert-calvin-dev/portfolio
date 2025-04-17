@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Build an Ethical Hacking Lab | Robert Calvin</title>
+  <link rel="stylesheet" href="styles/themes.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <style>
+   .blogposts {
+     width: 100%;
+   }
+   </style>
+</head>
+<body class="blur">
+  <header>
+    <div class="navbar">
+      <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
+      <div class="nav">
+        <a href="index.html#about">About</a>
+        <a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contactForm" class="contact-button" id="openModal">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="blogposts">
+      <div class="post">
+        <h1>🧪 How to Build an Ethical Hacking Lab</h1>
+        <h5>Published: April 16, 2025</h5>
+        <ul class="blogskills">
+          <li>Cybersecurity</li>
+          <li>EthicalHacking</li>
+          <li>LabSetup</li>
+          <li>PenTesting</li>
+          <li>ClientSecurity</li>
+        </ul>
+
+        <h3>Why Every Business Should Care About Penetration Testing</h3>
+        <p>Most clients I work with underestimate how exposed their digital assets really are. Weak passwords, outdated CMS plugins, lazy DNS configurations—these are goldmines for attackers and liability bombs for you. An ethical hacking lab isn’t just a playground for white hats. It’s a professional environment built to simulate real-world attacks on your infrastructure before the bad guys do it for real.</p>
+
+        <h3>Phase 1: Define Your Scope (Legal + Targeted)</h3>
+        <ul>
+          <li>❗ Only test systems you own or have explicit permission to audit.</li>
+          <li>Pick your focus: Web apps, APIs, IoT devices, cloud environments?</li>
+          <li>Draft a scope agreement: Clearly outline what systems are in bounds and what tools will be used.</li>
+          <li>Keep a log: Every action in your lab should be reproducible and justifiable.</li>
+        </ul>
+
+        <h3>Phase 2: Set Up Your Environment</h3>
+        <h4>🖥️ Virtualization Stack</h4>
+        <ul>
+          <li>Install VirtualBox or VMware</li>
+          <li>Create multiple VMs:
+            <ul>
+              <li>Kali Linux: attacker box (with all your tools)</li>
+              <li>Metasploitable / DVWA: intentionally vulnerable targets</li>
+              <li>Ubuntu Server / Windows 10: simulate real-world systems</li>
+            </ul>
+          </li>
+          <li>Networking: Use host-only or internal networking to stay sandboxed</li>
+          <li>Add a pfSense firewall for realism</li>
+        </ul>
+
+        <h4>🛠️ Toolchain Essentials</h4>
+        <p>Inside Kali (or Parrot OS), run:</p>
+        <pre><code>sudo apt update && sudo apt upgrade
+sudo apt install nmap metasploit-framework gobuster sqlmap burpsuite john hashcat</code></pre>
+        <p>Also useful: Wireshark, Dirb, Hydra, Enum4linux, BloodHound, reportlab (Python3)</p>
+
+        <h3>Phase 3: Real-World Workflow Example</h3>
+        <p><strong>Reconnaissance</strong><br>
+nmap -sC -sV target.com</p>
+        <p><strong>Enumeration</strong><br>
+gobuster dir -u http://target.com -w wordlist.txt</p>
+        <p><strong>Exploitation</strong><br>
+sqlmap -u "http://target.com/login.php?user=admin"</p>
+        <p><strong>Credential Testing</strong><br>
+hydra -l admin -P rockyou.txt target.com ssh</p>
+        <p><strong>Reporting</strong><br>All findings logged in Markdown → converted to client-facing PDF via Python/reportlab</p>
+
+        <h3>My Ethical Commitment</h3>
+        <p>Every test I conduct is logged, scoped, and delivered with full transparency. Clients don’t just get alerts—they get education, remediation guidance, and custom hardening suggestions.</p>
+
+        <h3>Want Your Own Pen Test?</h3>
+        <p>If you’re unsure whether your website or systems can withstand a targeted attack, I can walk you through a scoped test—and build you a private lab if you want to learn hands-on.</p>
+        <p><strong>👉 Contact me now</strong></p>
+      </div>
+    </div>
+
+
+  <footer><br>
+    <a href="tel:+1234567890">236 339 1498</a>
+    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
+    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
+  </footer>
+</body>
+</html>

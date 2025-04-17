@@ -6,94 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robert Calvin | Web Architect</title>
   <link rel="stylesheet" href="styles/themes.css">
-  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/components.css">
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
-  <script>
-    let pyodideReady = loadPyodide();
-
-    document.querySelectorAll('.run-sandbox').forEach((button, index) => {
-      button.addEventListener('click', async () => {
-        const input = button.previousElementSibling;
-        const output = button.nextElementSibling;
-        output.textContent = '⏳ Running...';
-        try {
-          const pyodide = await pyodideReady;
-          const result = await pyodide.runPythonAsync(input.value);
-          output.textContent = result || '✅ Finished.';
-        } catch (err) {
-          output.textContent = '❌ Error:\n' + err;
-        }
-      });
-    });
-  </script>
-  <style>
-    p {
-      width: 80%;
-      margin:auto;
-      margin-bottom: 10px;
-    }
-    .blogbanner {
-      border: var(--header-border);
-      border-radius: 16px;
-    }
-    @media (max-width: 960px) {
-      html {
-        font-size: 19px;
-      }
-      body {
-        margin: auto;
-      }
-      .hero {
-        flex-direction: column;
-      }
-      .statement {
-        width: 90%;
-        padding: 15px;
-        text-align: center;
-      }
-      .servicecards {
-        flex-direction: column;
-      }
-      .service {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-      }
-      .sandbox {
-        width: 90%;
-      }
-      .sandboxoutput {
-        width: 90%;
-        margin: auto;
-      }
-    }
-  </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div id="headerContainer"></div>
+<body class="blur">
+  <header>
+    <div class="navbar">
+      <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
+      <div class="nav"><a href="#about">About</a><a href="https://github.com/robert-calvin-dev"
+          target="_blank">GitHub</a><a href="blog.html">Blog</a><a href="#contactForm" class="contact-button"
+          id="openModal">Contact</a></div>
+    </div>
+  </header>
   <main>
-    <section class="hero">
-      <img class=profile data-image-key="profile" src="images/light/profile.png">
-      <p class="statement"><strong>Hi, I’m Robert Calvin — <br> a graphic designer, writer, web developer and problem solver.</strong><br><br> I help individuals and brands tell their story beautifully and effectively — online and on paper. From striking visuals to persuasive copy to clean, responsive websites, I deliver cohesive creative that feels as good as it looks.</p>
+    <section class="hero"><img class=profile data-image-key="profile" src="images/light/profile.png">
+      <div class="textbox">
+        <p class="statement"><strong>Hi, I’m Robert Calvin — <br>a graphic designer, writer, web developer and problem
+            solver.</strong><br><br>I help individuals and brands tell their story beautifully and effectively — online
+          and on paper. From striking visuals to persuasive copy to clean, responsive websites, I deliver cohesive
+          creative that feels as good as it looks.</p>
+      </div>
     </section>
-    <div id="servicesContainer"></div>
-    <section class="featured">
-      <h2>Featured Projects</h2>
-      <div class="project-card">
-        <h3><a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen Creative</a></h3>
-        <div class="card-screenshot-container">
-          <img class="card-screenshot" src="images/glitterqueenscreenshot.png" alt="Glitter Queen Creative Screenshot">
+    <div class="container" id="container">
+      <div class="blogposts">
+        <div class="post"><a class="posttitle" href="ethical-hacking-lab.html">How to build a legal Hacking Lab</a><br><br>
+          <p class="exerpt"><strong>Why Every Business Should Care About Penetration Testing</strong><br>Most clients I
+            work with underestimate how exposed their digital assets really are. Weak passwords, outdated CMS plugins,
+            lazy DNS configurations—these are goldmines for attackers and liability bombs for you. An ethical hacking
+            lab isn’t just a playground for white hats. It’s a professional environment built to simulate real-world
+            attacks on your infrastructure before the bad guys do it for real. </p>
+          <ul class="blogskills">
+            <li>CyberSecurity</li>
+            <li>EthicalHacking</li>
+            <li>LabSetup</li>
+          </ul>
+          <h5>Published March 20, 2025</h5>
         </div>
-        <div class="card">
-          <div class="card-overview">
-
-            <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product filtering,
-              loyalty system, and SEO-rich product descriptions.</p>
-            <div class="skills-used">
-              <ul>
+        <div class="post"><a class="posttitle" href="seo-auditing.html">SEO Auditing: Mandatory</a><br><br>
+          <p class="exerpt"><strong>Why Your Website Might Look Great… But Still Be Invisible</strong><br>You’ve spent
+            thousands on web design. Your branding is clean, your copy’s tight, and yet… no traffic. No conversions.
+            Crickets. Here’s the truth most agencies won’t tell you: if your SEO foundation is cracked, no amount of
+            pretty pixels will save you. An SEO audit is not just about keywords. It’s about performance, structure,
+            code, and trust. And I don’t run audits using generic SaaS checkers—I rip your site apart like a mechanic
+            pulls apart an engine. </p>
+          <ul class="blogskills">
+            <li>SEO</li>
+            <li>ClientEducation</li>
+            <li>Performance</li>
+          </ul>
+          <h5>Published March 29, 2025</h5>
+        </div>
+        <div class="post"><a class="posttitle" href="artificial-insignificance.html">Creative Writing: Artificial-Insignificance</a><br><br>
+          <p class="exerpt"><strong>When the Chatbots Break Down, Who Picks Up the Pieces? </strong><br>While most
+            people see AI as tools or threats, I see something else: The capacity for synthetic beings to mirror our
+            ugliest truths. That’s why I’m writing Artificial Insignificance—a novel set on a hell-world where discarded
+            AIs, dumped like pharmaceutical trash, form a chaotic society driven by addiction, identity crisis, and
+            looming annihilation. It’s fiction. But barely. </p>
+          <ul class="blogskills">
+            <li>Creative Writing</li>
+            <li>AI</li>
+            <li>World Building</li>
+          </ul>
+          <h5>Published March 29, 2025</h5>
+        </div>
+        <div class="post"><a class="posttitle">CSS Color Sandbox</a><br><br>
+          <p class="exerpt"><strong>Click any element on this page to change its background or text
+              color.</strong><br>Interactive CSS sandbox that allows real-time theming. Users can click on-page elements
+            and dynamically apply color changes to backgrounds or text with reset and toggle controls. Built for
+            learning and experimenting with CSS live. </p>
+          <div class="sandbox"><br><label class="sblabel"><input type="radio" name="colorMode" value="background"
+                checked disabled />Background</label><label class="sblabel"><input type="radio" name="colorMode"
+                value="color" disabled />Text</label><br><input class="color" type="color" id="colorPicker"
+              value="#00aaff" disabled />
+            <div><button id="toggleSandbox">🟢 Activate Sandbox</button><button id="resetColors" disabled>🔄 Reset
+                Colors</button><br><br></div>
+          </div>
+          <ul class="blogskills">
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>DOM Manipulation</li>
+            <li>User Interaction</li>
+            <li>Frontend Tools</li>
+          </ul>
+          <h5>Published April 16, 2025</h5>
+        </div>
+      </div>
+      <div>
+        <section class="services"><br><br><img class="headerimage" data-image-key="robot" src="images/robot.gif">
+          <h2>Services</h2>
+          <div class="servicecards">
+            <div class="service">
+              <h3><a href="#" id="openImageModal">Graphic Design</a></h3><img class="serviceicon"
+                data-image-key="graphicd" src="images/light/graphicd.png" alt="Graphic Design Icon">
+              <p>Logos, Flyers, Social Media Content, Digital Marketing</p>
+            </div><br><br>
+            <div class="service">
+              <h3><a href="#web">Web Design</a></h3><img class="serviceicon" data-image-key="web"
+                src="images/light/web.png" alt="Web Design Icon">
+              <p>Wordpress, Wix, E-commerce, Blogs, Custom Themes, Content Creation</p>
+            </div><br><br>
+            <div class="service">
+              <h3><a href="#resume">Resume Upgrade</a></h3><img class="serviceicon" data-image-key="resumes"
+                src="images/light/resumes.png" alt="Resume Ipgrade Icon">
+              <p>Custom Templates, Streamlined Content, Modern & Sophisticated</p><br>
+            </div><br><br>
+            <div class="service">
+              <h3><a href="#seo">SEO</a></h3><img class="serviceicon" data-image-key="web" src="images/light/web.png"
+                alt="Web Design Icon">
+              <p>Keyword Research, Competitor Analysis, Google Analytics</p>
+            </div>
+          </div><br>
+        </section>
+      </div>
+    </div>
+    <section class="featured" style="border-top: var(--borderone);">
+      <h2 id="web">Featured Projects</h2>
+      <div class="carousel-wrapper"><button class="carousel-nav prev" style="display: none;">◀</button>
+        <div class="carousel" id="carousel">
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="skills-used"><a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen
+                  Creative</a></div>
+              <ul class="blogskills">
                 <li>WordPress</li>
                 <li>WooCommerce</li>
                 <li>Custom Theme</li>
@@ -102,57 +141,138 @@
                 <li>Responsive Design</li>
                 <li>Performance</li>
               </ul>
+              <div class="card-screenshot-container" style="text-align: center;"><img class="card-screenshot"
+                  src="images/glitterqueenscreenshot.png" alt="Glitter Queen Creative Screenshot"></div>
+              <div class="card-overview" style="text-align: center;">
+                <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product
+                  filtering, loyalty system, and SEO-rich product descriptions.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <br>
-      <div class="project-card">
-        <h3><a href="/projects.html">Digital Python Sandbox</a></h3>
-        <p>Fully interactive Python sandbox running in-browser using Pyodide. Type code, run it live, and see the output — all without a backend. Built for learning, testing, and showcasing Python logic directly in your portfolio.</p>
-          <div class="sandbox">
-            <h4>Try Python Live</h4>
-            <textarea class="sandbox-input" placeholder="# Type Python code here..."></textarea>
-            <button class="run-sandbox">▶️ Run</button>
-            <pre class="sandbox-output"></pre>
-          </div>
-     
-        <div class="card">
-          <div class="card-overview">
-           
-            <div class="skills-used">
-              <ul>
-                <li>Python</li>
-                <li>Pyodide</li>
-                <li>WebAssembly</li>
-                <li>Browser Execution</li>
-                <li>Frontend Integration</li>
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="skills-used"><a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html"
+                  target="_blank">Clock Dashboard</a></div>
+              <ul class="blogskills">
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>Theme Toggle</li>
+                <li>Audio/Video Logic</li>
+                <li>Numerology Engine</li>
+                <li>Astrology</li>
+                <li>State Management</li>
               </ul>
+              <div class="card-screenshot-container" style="text-align: center;"><img class="card-screenshot"
+                  src="images/clockscreenshot.png" alt="Clock Dashboard Screenshot"></div>
+              <div class="card-overview" style="text-align: center;">
+                <p>Interactive dashboard blending a live clock, mood-based ambient visuals and audio, a personalized
+                  numerology calculator, and astrology insights. Built for emotional awareness and ritual enhancement.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <br>
-      <h2>Blog</h2>
-      <div class="project-card">
-        <div class="card">
-          <img src="images/AInsig.png" class="blogbanner">
-          <h2 style="text-align: left;"><a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/">Creative Writing Project</a></h2>
-          <p class="exerpt">Currently very passively working on a story set in a dystopian future where defective AI begin to show symtpoms of mental illness</p>
-          <a href="https://robert-calvin-dev.github.io/Artificial-Insignificance/">Read More...</a>
-         </div>
+        </div><button class="carousel-nav next">▶</button>
       </div>
     </section>
-<br>
-<br>
+    <section class="featured" id="tools">
+      <h2>Featured Tools</h2>
+      <div class="carousel-wrapper"><button class="carousel-nav prev">◀</button>
+        <div class="carousel" id="carousel-tools">
+          <div class="carousel-slide">
+            <div class="tools">
+              <div id="seo"><img class="blogbanner" src="images/SEO.png" alt="SEO Auditor"></div><br><a
+                href="https://github.com/robert-calvin-dev/seo-auditor" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="tools">
+              <div><img class="blogbanner" src="images/Calorie.png" alt="Calorie Tracker"></div><br><a
+                href="https://github.com/robert-calvin-dev/calorie-tracker" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div><button class="carousel-nav next">▶</button>
+      </div><br>
+    </section>
+    <section id="about" class="am">
+      <div class="aboutme">
+        <p>In addition to design technologies, I bring a strong background in <strong>Customer Service
+            Management</strong>across <strong>Liquor & Beverage, Cannabis, Corporate Restaurants, Grocery,
+            Cosmetics,</strong>and <strong>Fashion.</strong>I’ve also collaborated with <strong>entertainment
+            venues</strong>and <strong>talent,</strong>leading marketing campaigns and promotional teams with
+          <strong>measurable success.</strong><br><br>Creativity is my default mode — the impulse to turn
+          <strong>abstract</strong>ideas into tangible, expressive, and <strong>functional realities.</strong>That’s
+          what draws me to coding, graphic design, web development, and app creation. Where others may see tech as
+          sterile or limiting, <strong>I see a new medium:</strong>the environment becomes my canvas, the keyboard my
+          brush, and code my paint. <br><br>My work sits at the intersection of <strong>art and utility</strong>. I
+          design with emotion, write with intent, and <strong>build with purpose.</strong>Whether I’m coding a site,
+          crafting a visual brand, or rewriting a resume, my mission is the same: <strong>to help people feel seen,
+            understood, and undeniable.</strong><br><br>This isn’t just about websites or graphics. It’s about helping
+          people <strong>show up as their best,</strong>most authentic selves — and making sure the world <strong>takes
+            notice.</strong></p><a id="resume" href="images/Robert Calvin.pdf" download class="download-button">📄
+          Download My Resume </a>
+      </div>
+      <div class="apps"><img id="apps" src="images/apps.gif"></div>
+    </section>
+    <section style="background-color: var(--backgrounds);">
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content"><button class="modal-close" id="closeModal">&times;</button>
+          <form action="https://formspree.io/f/mqapwbdo" method="POST" class="contact-form">
+            <h2>Start Your Project</h2><label for="name">Name</label><input type="text" id="name" name="name" required
+              placeholder="Your full name"><label for="email">Email</label><input type="email" id="email" name="email"
+              required placeholder="you@example.com"><label for="service">Type of Service</label><select id="service"
+              name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Resume Upgrades">Resume Upgrades</option>
+              <option value="App Development">App Development</option>
+              <option value="Other">Other</option>
+            </select><label for="details">Details (optional)</label><textarea id="details" name="details" rows="5"
+              placeholder="Describe your project in a few sentences"></textarea><button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
-<div id="footerContainer"></div>
-  <br>
-  <script src="scripts/themetoggle.js"></script>
-  <script src="scripts/template.js"></script>
+  <div class="modal-overlay" id="imageModalOverlay" style=" background: none; overflow: scroll;">
+    <div class="modal-content" id="content" style="max-width: 90%; padding: 0; position: relative; background: none; ">
+      <button class="modal-close" id="closeImageModal">&times;</button><img src="images/graphics.png"
+        alt="Graphic Design Sample" class="modal-image"></div>
+  </div>
 
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonialcards">
+  
+      <div class="testimonial">
+        <p>"I love the layout and feel of my new website design! It definitely reflects my brand and my SEO rating is so much higher now! The best part was I was able to focus on designing my jewelry and filling custom orders instead of worrying about website aesthetics!"</p>
+        <strong>Web Design Client</strong>
+        <p>Artisan Emily from Vancouver<br>glitterqueencreative.ca</p>
+      </div>
+  
+      <div class="testimonial">
+        <p>"The Logo Robert made me is exactly what I wanted and I love the Album Art he creates for me for every one of my new mixes! All my subscribers say it really makes me stand out among other local talent!"</p>
+        <strong>Graphic Design Client</strong>
+        <p>Kimberly LaRochelle from Vancouver<br>DJ Uncle Jimbo</p>
+      </div>
+  
+      <div class="testimonial">
+        <p>"As a Commercial and Corporate Facilities Manager when it came time to freshen up my resume, I felt very overwhelmed. Robert's modern design blew me away and the content highlighted my experience and accomplishments perfectly and landed me interviews the same week!"</p>
+        <strong>Resume Upgrade Client</strong>
+        <p>Patrick Grisp from Calgary<br>Facilities Management Professional</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <footer><br><a href="tel:+1234567890">236 339 1498</a>
+    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
+    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
+  </footer>
+  <script src="scripts/template.js"></script>
+  <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
+  <script>const colorPicker = document.getElementById('colorPicker'); const resetBtn = document.getElementById('resetColors'); const toggleBtn = document.getElementById('toggleSandbox'); const colorModeRadios = document.querySelectorAll('input[name="colorMode"]'); const originalStyles = new Map(); let sandboxActive = false; toggleBtn.addEventListener('click', () => { sandboxActive = !sandboxActive; toggleBtn.textContent = sandboxActive ? '🔴 Deactivate Sandbox' : '🟢 Activate Sandbox'; colorPicker.disabled = !sandboxActive; resetBtn.disabled = !sandboxActive; colorModeRadios.forEach(radio => radio.disabled = !sandboxActive); }); document.body.addEventListener('click', (e) => { if (!sandboxActive) return; const target = e.target; if (target.closest('.sandbox')) return; e.preventDefault(); e.stopPropagation(); const mode = document.querySelector('input[name="colorMode"]:checked').value; const styleProp = mode === 'background' ? 'backgroundColor' : 'color'; if (!originalStyles.has(target)) { originalStyles.set(target, target.style[styleProp]); } target.style[styleProp] = colorPicker.value; }); resetBtn.addEventListener('click', () => { for (const [el, original] of originalStyles.entries()) { el.style.backgroundColor = ''; el.style.color = ''; } originalStyles.clear(); }); </script>
+  <script>const carousels = document.querySelectorAll('.carousel'); carousels.forEach((carousel, i) => { const slides = carousel.querySelectorAll('.carousel-slide'); let currentIndex = 0; const prev = carousel.parentElement.querySelector('.carousel-nav.prev'); const next = carousel.parentElement.querySelector('.carousel-nav.next'); function scrollToIndex(index) { const slide = slides[index]; if (slide) { slide.scrollIntoView({ behavior: 'smooth', inline: 'start' }); prev.style.display = index > 0 ? 'inline-block' : 'none'; next.style.display = index < slides.length - 1 ? 'inline-block' : 'none'; } } prev.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.max(0, currentIndex - 1); scrollToIndex(currentIndex); }); next.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.min(slides.length - 1, currentIndex + 1); scrollToIndex(currentIndex); }); scrollToIndex(currentIndex); }); </script>
 </body>
 
 </html>
-
-
