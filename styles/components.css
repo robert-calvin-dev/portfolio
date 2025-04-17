@@ -1030,7 +1030,8 @@ body.modal-active {
   }
 
   .color {
-    height: 80px
+    height: 80px;
+    width:50%;
   }
 
   .apps {

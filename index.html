@@ -18,7 +18,7 @@
   <header>
     <div class="navbar">
       <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
-      <div class="nav"><a href="#about">About</a><a href="https://github.com/robert-calvin-dev"
+      <div class="nav"><a href="https://github.com/robert-calvin-dev"
           target="_blank">GitHub</a><a href="blog.html">Blog</a><a href="#contactForm" class="contact-button"
           id="openModal">Contact</a></div>
     </div>
@@ -273,6 +273,14 @@
   <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
   <script>const colorPicker = document.getElementById('colorPicker'); const resetBtn = document.getElementById('resetColors'); const toggleBtn = document.getElementById('toggleSandbox'); const colorModeRadios = document.querySelectorAll('input[name="colorMode"]'); const originalStyles = new Map(); let sandboxActive = false; toggleBtn.addEventListener('click', () => { sandboxActive = !sandboxActive; toggleBtn.textContent = sandboxActive ? '🔴 Deactivate Sandbox' : '🟢 Activate Sandbox'; colorPicker.disabled = !sandboxActive; resetBtn.disabled = !sandboxActive; colorModeRadios.forEach(radio => radio.disabled = !sandboxActive); }); document.body.addEventListener('click', (e) => { if (!sandboxActive) return; const target = e.target; if (target.closest('.sandbox')) return; e.preventDefault(); e.stopPropagation(); const mode = document.querySelector('input[name="colorMode"]:checked').value; const styleProp = mode === 'background' ? 'backgroundColor' : 'color'; if (!originalStyles.has(target)) { originalStyles.set(target, target.style[styleProp]); } target.style[styleProp] = colorPicker.value; }); resetBtn.addEventListener('click', () => { for (const [el, original] of originalStyles.entries()) { el.style.backgroundColor = ''; el.style.color = ''; } originalStyles.clear(); }); </script>
   <script>const carousels = document.querySelectorAll('.carousel'); carousels.forEach((carousel, i) => { const slides = carousel.querySelectorAll('.carousel-slide'); let currentIndex = 0; const prev = carousel.parentElement.querySelector('.carousel-nav.prev'); const next = carousel.parentElement.querySelector('.carousel-nav.next'); function scrollToIndex(index) { const slide = slides[index]; if (slide) { slide.scrollIntoView({ behavior: 'smooth', inline: 'start' }); prev.style.display = index > 0 ? 'inline-block' : 'none'; next.style.display = index < slides.length - 1 ? 'inline-block' : 'none'; } } prev.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.max(0, currentIndex - 1); scrollToIndex(currentIndex); }); next.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.min(slides.length - 1, currentIndex + 1); scrollToIndex(currentIndex); }); scrollToIndex(currentIndex); }); </script>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 50); // slight delay to override other forces
+    });
+  </script>
+
 </body>
 
 </html>
