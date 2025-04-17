@@ -277,6 +277,9 @@ hr {
   text-align: center;
   width: 80%;
 }
+.tools {
+  margin: auto;
+}
 
 .skills-used a, .tools a {
   margin: auto;
@@ -294,6 +297,7 @@ hr {
 .blogbanner {
   border: var(--borderone);
   border-radius: 30%;
+  margin: auto;
 }
 
 .carousel-wrapper {
@@ -301,6 +305,7 @@ hr {
   margin: 0 auto;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
@@ -438,6 +443,7 @@ hr {
 .testimonials {
   padding: 2rem 0;
   text-align: center;
+  margin: auto;
 }
 
 .testimonials h2 {
@@ -454,6 +460,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 1rem;
+  margin: auto;
 }
 
 .testimonial {
@@ -466,6 +473,7 @@ hr {
   color: var(--text);
   border: var(--borderone);
   display: flex;
+  margin: auto;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -879,7 +887,7 @@ body.modal-active {
   }
 
   .blogbanner {
-    width: 90%
+    width: 100%
   }
 }
 
@@ -1030,7 +1038,7 @@ body.modal-active {
   }
 
   .blogbanner {
-    width: 90%
+    width: 100%
   }
 
   .blogskills, .skills {
@@ -1166,7 +1174,7 @@ body.modal-active {
   }
 
   .blogbanner {
-    width: 90%
+    width: 100%
   }
 
   .carousel-wrapper {
