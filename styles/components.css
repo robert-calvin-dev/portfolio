@@ -17,6 +17,27 @@
   --card-gradient-end: #445700
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  object-fit: contain;
+}
+
+
+
 #theme-html {
   margin: auto;
   background-color: var(--backgrounds);
@@ -482,7 +503,7 @@ footer {
 }
 
 .apps {
-  width: 50%;
+  width: 70%;
   height: 100%;
   border-bottom: var(--borderone);
   padding-bottom: 0;
