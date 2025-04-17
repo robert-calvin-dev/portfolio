@@ -1,10 +1,10 @@
 :root {
   --backgrounds: #021221d2;
-  --bgblend: #0000003a;
+  --bgblend: #00000097;
   --bg: #000831;
   --btnbg: #333;
   --btnhover: rgb(255, 255, 255);
-  --bghover: rgba(197, 191, 12, .828);
+  --bghover: rgba(41, 155, 3, 0.828);
   --bordertwo: 2px solid rgb(240, 240, 2);
   --text: #ffffff;
   --headings: #ffff00;
