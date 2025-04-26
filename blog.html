@@ -18,24 +18,96 @@
 <meta name="twitter:description" content="Explore cutting-edge tech discussions, freelance advice, and portfolio tips.">
 <meta name="twitter:image" content="https://robert-calvin-dev.github.io/portfolio/images/light/profile.png">
 
-  <link rel="stylesheet" href="styles/themes.css">
-  <link rel="stylesheet" href="styles/components.css">
-  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
-  <style>
-    a {
-      font-size: 0.8rem;
-    }
-  </style>
+<link rel="stylesheet" href="styles/themes.css">
+<link rel="stylesheet" href="styles/components.css">
+<link href="https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+<style>
+  a {
+    font-size: 0.8rem;
+  }
+  .blogposts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .post {
+    width: 100%;
+    padding: 2rem;
+    background: var(--backgrounds);
+    border: 1px solid var(--btnbg);
+    border-radius: 10px;
+  }
+  .posttitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .exerpt {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .blogskills {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .blogskills li {
+    background: var(--btnbg);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    color: white;
+  }
+  h5 {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: gray;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--backgrounds);
+    border-bottom: 2px solid var(--btnbg);
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .navbar a:hover {
+    color: var(--strong);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .home a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+</style>
 </head>
 <body class="blur">
   <header>
     <div class="navbar">
-      <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
-      <div class="nav">
-
+      <div class="home">
+        <a href="index.html" class="active" style="font-size: 1.6rem; font-weight: bold;">Robert Calvin Marketing</a>
+      </div>
+      <div class="nav" style="gap: 1.5rem; font-size: 1rem;">
         <a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
         <a href="blog.html">Blog</a>
+        <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
         <a href="#contactForm" class="contact-button" id="openModal">Contact</a>
       </div>
     </div>
@@ -43,6 +115,7 @@
 
   <main class="blogger">
     <div class="blogposts">
+      
       <div class="post">
         <a class="posttitle" href="ethical-hacking-lab.html">🧪 How to Build an Ethical Hacking Lab</a>
         <p class="exerpt">
@@ -84,24 +157,42 @@
         </ul>
         <h5>Published April 16, 2025</h5>
       </div>
+
+      <div class="post">
+        <a class="posttitle" href="quick-add-pro.html">🚀 Quick Add Pro: Bulk Uploads, SEO, and WooCommerce Domination</a>
+        <p class="exerpt">
+          <strong>The Missing Link in WooCommerce Product Management</strong><br>
+          If you’re still adding products one at a time... you’re already falling behind. Quick Add Pro changes the game...<br>
+        </p>
+        <ul class="blogskills">
+          <li>WooCommerce</li>
+          <li>PluginDevelopment</li>
+          <li>eCommerceOptimization</li>
+        </ul>
+        <h5>Published April 26, 2025</h5>
+      </div>
+
     </div>
 
     <section style="background-color: var(--backgrounds);">
       <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-content"><button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-content">
+          <button class="modal-close" id="closeModal">&times;</button>
           <form action="https://formspree.io/f/mqapwbdo" method="POST" class="contact-form">
-            <h2>Start Your Project</h2><label for="name">Name</label><input type="text" id="name" name="name" required
-              placeholder="Your full name"><label for="email">Email</label><input type="email" id="email" name="email"
-              required placeholder="you@example.com"><label for="service">Type of Service</label><select id="service"
-              name="service" required>
+            <h2>Start Your Project</h2>
+            <label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your full name">
+            <label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@example.com">
+            <label for="service">Type of Service</label>
+            <select id="service" name="service" required>
               <option value="" disabled selected>Select a service</option>
               <option value="Graphic Design">Graphic Design</option>
               <option value="Web Design">Web Design</option>
               <option value="Resume Upgrades">Resume Upgrades</option>
               <option value="App Development">App Development</option>
               <option value="Other">Other</option>
-            </select><label for="details">Details (optional)</label><textarea id="details" name="details" rows="5"
-              placeholder="Describe your project in a few sentences"></textarea><button type="submit">SUBMIT</button>
+            </select>
+            <label for="details">Details (optional)</label><textarea id="details" name="details" rows="5" placeholder="Describe your project in a few sentences"></textarea>
+            <button type="submit">SUBMIT</button>
           </form>
         </div>
       </div>
@@ -114,8 +205,17 @@
     <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
   </footer>
 
-  <script src="scripts/template.js"></script>
-  <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
+<script src="scripts/template.js"></script>
+<script>
+const openBtn = document.getElementById('openModal');
+const closeBtn = document.getElementById('closeModal');
+const modal = document.getElementById('modalOverlay');
+const body = document.body;
+openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); });
+closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); });
+window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } });
+</script>
 
 </body>
 </html>
+

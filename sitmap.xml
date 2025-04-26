@@ -25,4 +25,9 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+    <url>
+    <loc>https://robert-calvin-dev.github.io/portfolio/quick-add-pro.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
