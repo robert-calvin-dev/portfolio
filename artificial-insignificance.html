@@ -24,6 +24,36 @@
    .blogposts {
      width: 100%;
    }
+   .gif-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.gif-link {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gif-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .gif-links-container {
+    flex-direction: column;
+  }
+}
+
    </style>
 </head>
 <body class="blur">
@@ -108,10 +138,27 @@
 
 
 
-  <footer><br>
-    <a href="tel:+1234567890">236 339 1498</a>
-    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
-    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
-  </footer>
+    <footer><br>
+      <a href="tel:+1234567890">236 339 1498</a>
+      <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
+      <section class="gif-links-container">
+        <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">
+          <img src="images/mysticclock.gif" alt="Mystic Clock" class="gif-link">
+        </a>
+        <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">
+          <img src="images/pourchoice.gif" alt="The Pour Choice" class="gif-link">
+        </a>
+        <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">
+          <img src="images/quickaddpro.gif" alt="Quick Add Pro" class="gif-link">
+        </a>
+        <a href="https://glitterqueencreative.ca" target="_blank">
+          <img src="images/gq.gif" alt="Glitter Queen" class="gif-link">
+        </a>
+        <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">
+          <img src="images/ujdjpad.gif" alt="Uncle Jimbo DJ Pad" class="gif-link">
+        </a>
+      </section>
+      <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
+    </footer>
 </body>
 </html>
