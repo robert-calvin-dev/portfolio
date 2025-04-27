@@ -42,12 +42,15 @@
     .hero {
       flex-shrink: 1;
   
+    flex-direction: column-reverse;
       align-items: center;
       justify-content: space-between
     }
   
     .hero img {
       width: 40%;
+      border: var(--borderone);
+      margin-bottom: 30px;
     }
   
     .statement {
