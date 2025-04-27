@@ -1,22 +1,3 @@
-:root {
-  --backgrounds: #021221d2;
-  --bgblend: #00000097;
-  --bg: #000831;
-  --btnbg: #333;
-  --btnhover: rgb(255, 255, 255);
-  --bghover: rgba(41, 155, 3, 0.828);
-  --bordertwo: 2px solid rgb(240, 240, 2);
-  --text: #ffffff;
-  --headings: #ffff00;
-  --labels: rgba(12, 49, 197, .828);
-  --strong: #00ecd8;
-  --shadow: #fff;
-  --shadowtwo: rgb(249, 253, 0);
-  --borderone: 1px solid #fff;
-  --card-gradient-start: #054278;
-  --card-gradient-end: #445700
-}
-
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -25,7 +6,6 @@ html, body {
 * {
   box-sizing: border-box;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -61,13 +41,10 @@ h1, h2, h3, a {
 h2 {
   text-align: center;
 }
-
 h5 {
   color: var(--headings);
 }
-
 p {
-  padding-bottom: 20px;
   font-weight: bolder;
 }
 
@@ -162,7 +139,7 @@ margin: auto;
 }
 
 .card-screenshot-container {
-  width: 80%;
+  width: 100%;
   border-radius: 16px;
   overflow: hidden;
   margin: auto;
@@ -210,7 +187,7 @@ margin: auto;
 
 .skills li, .blogskills li {
   background: var(--labels);
-  color: var(--text);
+  color: var(--btnbg);
   padding: .35rem .85rem;
   border-radius: 16px;
   font-weight: 600;
@@ -240,7 +217,7 @@ margin: auto;
   padding: 30px;
   border: var(--borderone);
   margin: 30px;
-  background-color: var(--backgrounds);
+  background: linear-gradient(145deg, var(--card-gradient-start), var(--card-gradient-end));
 }
 
 .posttitle {
@@ -299,6 +276,10 @@ hr {
   border: var(--borderone);
   border-radius: 30%;
   margin: auto;
+}
+
+.card-screenshot-container {
+  width: 100%;
 }
 
 .carousel-wrapper {
@@ -484,7 +465,7 @@ justify-content: space-between;
 
 footer {
   width: 100%;
-  border-top: var(--borderone);
+  border: var(--borderone);
   gap: 0;
   margin: auto;
   text-align: center;
@@ -542,7 +523,7 @@ body.modal-active {
 
 .contact-button {
   padding: 12px 24px;
-  background-color: var(--labels);
+  background-color: var(--bghover);
   color: var(--text);
   border: var(--borderone);
   border-radius: 8px;
@@ -646,557 +627,10 @@ body.modal-active {
   }
 }
 
-@media only screen and (max-width:576px) {
-  body {
-    font-size: 16px;
-    overflow-x: hidden;
-    width:100%
-  }
 
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
-  }
 
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: var(--backgrounds);
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: var(--borderone);
-  }
 
-  .nav.active {
-    display: flex;
-  }
 
-  .nav a {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-  .testimonialcards {
-    flex-direction: column;
-  }
-  .testimonial {
-    width: 90%;
-  }
-
-
-
-  .profile {
-    border-top: var(--borderone);
-    border-bottom: none
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center
-  }
-
-  .hero img {
-    width: 100%;
-    border-right: none;
-    border-bottom: var(--borderone)
-  }
-
-  .statement {
-    width: 100%;
-    font-size: 1.3rem;
-    padding: 10px 40px 10px 10px
-  }
-
-  .container {
-    flex-direction: column;
-    width: 100%
-  }
-
-  .blogposts {
-    width: 100%;
-    border-right: none
-  }
-
-  .post {
-    padding: 20px 10px 10px 10px;
-    border: var(--borderone);
- 
-  }
-
-  .card-screenshot-container {
-    width: 100%
-  }
-
-  .card {
-    padding: 1rem
-  }
-
-  .servicecards {
-    flex-direction: column;
-    padding: 10px;
-    width: 100%
-  }
-
-  .service {
-    width: 100%;
-    margin: 10px auto;
-    padding: 15px
-  }
-
-  .serviceicon {
-    width: 60px;
-    height: 60px
-  }
-
-  .featured p {
-    width: 100%;
-    padding: 0 10px
-  }
-
-  .carousel-slide {
-    padding: 1rem .5rem
-  }
-
-  .carousel-wrapper {
-    flex-direction: column
-  }
-
-  .aboutme {
-    width: 100%;
-    padding: 1rem
-  }
-
-  .am {
-   border: var(--borderone);
-   flex-direction: column;
-  }
-
-  .apps {
-    width: 100%
-  }
-
-  #apps {
-    width: 100%;
-    border-left: none;
-    border-top: var(--borderone)
-  }
-
-  .headerimage {
-    width: 200px;
-    height: 200px
-  }
-
-  .modal-content {
-    width: 95%;
-    padding: 1rem
-  }
-
-  .modal-image {
-    width: 90%
-  }
-
-  .contact-form input, .contact-form select, .contact-form textarea {
-    font-size: 1rem
-  }
-
-  .sblabel {
-    font-size: 1rem
-  }
-
-  .sandbox {
-    width: 95%;
-    margin: 1rem auto;
-    padding: 1rem
-  }
-
-  .color {
-    width: 90%;
-    height: 75px
-  }
-
-  .footer, footer {
-    font-size: .9rem;
-    padding: 1rem
-  }
-
-  a, #resetColors, #toggleSandbox {
-    font-size: 1rem;
-    margin: 5px;
-    padding: 6px 12px
-  }
-
-  .blogskills, .skills {
-    flex-wrap: wrap;
-    justify-content: center
-  }
-
-  .blogskills li, .skills li {
-    font-size: .8rem;
-    margin: 4px
-  }
-
-  .blogbanner {
-    width: 100%
-  }
-}
-
-@media screen and (min-width:577px) and (max-width:768px) {
-  body {
-    font-size: 17px;
-
-  }
-
-  .testimonialcards {
-    flex-direction: column;
-  }
-  .testimonial {
-    width: 90%;
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: var(--backgrounds);
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: var(--borderone);
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .nav a {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-
-
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%
-  }
-
-  .hero img {
-    width: 100%;
-    border-right: none;
-    border-bottom: var(--borderone)
-  }
-
-  .statement {
-    width: 90%;
-    font-size: 1.5rem;
-    padding: 1rem 2rem
-  }
-
-  .container {
-
-    width: 100%
-  }
-
-  .blogposts {
-    width: 100%;
-    border-right: none
-  }
-
-  .post {
-    padding: 1.5rem;
-    border: var(--borderone);
-
-  }
-
-  .card {
-    padding: 1rem 1.5rem
-  }
-
-  .card-screenshot-container {
-    width: 100%
-  }
-
-  .servicecards {
-    flex-direction: column;
-    width: 100%
-  }
-
-  .service {
-    width: 80%;
-    margin: 10px auto;
-    padding: 20px
-  }
-
-  .serviceicon {
-    width: 70px;
-    height: 70px
-  }
-
-  .featured p {
-    width: 90%
-  }
-
-  .carousel-wrapper {
-    flex-direction: column
-  }
-
-  .carousel-slide {
-    padding: 1rem
-  }
-
-  .aboutme {
-    width: 95%;
-    padding: 1rem 1.5rem
-  }
-
-  .am {
-    flex-direction: column
-  }
-
-  #apps {
-    width: 100%;
-    border-left: none;
-    border-top: var(--borderone)
-  }
-
-  .headerimage {
-    width: 240px;
-    height: 240px
-  }
-
-  .modal-content {
-    width: 90%;
-    padding: 1.5rem
-  }
-
-  .modal-image {
-    width: 90%
-  }
-
-  .contact-form input, .contact-form select, .contact-form textarea {
-    font-size: 1rem
-  }
-
-  .sandbox {
-    width: 90%;
-    margin: 1rem auto;
-    padding: 1rem
-  }
-
-  .color {
-    height: 80px;
-    width:50%;
-  }
-
-  .apps {
-    display: none
-  }
-
-  .blogbanner {
-    width: 100%
-  }
-
-  .blogskills, .skills {
-    flex-wrap: wrap;
-    justify-content: center
-  }
-
-  .blogskills li, .skills li {
-    font-size: .85rem;
-    padding: .3rem .75rem
-  }
-
-  a, #resetColors, #toggleSandbox {
-    font-size: 1.2rem;
-    padding: 6px 14px
-  }
-
-  footer {
-    font-size: 1rem;
-    padding: 1rem 0
-  }
-}
-
-@media screen and (min-width:769px) and (max-width:1420px) {
-  body {
-    max-width: 100%;
-    font-size: 15px;
-    margin: auto
-  }
-
-  .testimonialcards {
-    flex-direction: column;
-    padding: 0;
-  
-  }
-  .testimonial {
-    margin: auto;
-    width: 80%;
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: var(--backgrounds);
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: var(--borderone);
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .nav a {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between
-  }
-
-  .hero img {
-    width: 100%
-  }
-
-  .statement {
-    width: 100%;
-    font-size: 1rem
-  }
-
-  .container {
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between
-  }
-
-  .blogposts {
-    width: 100%
-  }
-
-  .post {
-    padding: 20px;
-    border-top: var(--borderone);
-    border-left: var(--borderone);
-    border-bottom: none
-  }
-
-  .card {
-    padding: 1.5rem
-  }
-
-  .card-screenshot-container {
-    width: 80%
-  }
-
-  .card-overview {
-    font-size: .95rem
-  }
-
-  .servicecards {
-  display: flex;
-    flex-wrap: wrap;
-    margin:auto ;
-    width: 100%;
-    gap: 1rem;
-    justify-content: space-around
-  }
-
-  .service {
-    margin:auto ;
-    width: 60%;
-
-  }
-
-  .serviceicon {
-    width: 70px;
-    height: 70px
-  }
-
-  .headerimage {
-    width: 250px;
-    height: 250px
-  }
-
-  .am {
-    flex-direction: column
-  }
-
-  .aboutme {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-
-  .apps {
-    display: none
-  }
-
-  .blogbanner {
-    width: 100%
-  }
-
-  .carousel-wrapper {
-    width: 90%
-  }
-
-  .carousel-slide {
-    width: 100%;
-    padding: 1rem
-  }
-
-  .modal-content {
-    width: 85%;
-    padding: 1.5rem
-  }
-
-  .modal-image {
-    width: 75%
-  }
-
-  .sandbox {
-    width: 90%;
-    padding: 1rem
-  }
-
-  .color {
-    height: 80px
-  }
-
-  .blogskills, .skills {
-    gap: .4rem;
-    justify-content: flex-start;
-    flex-wrap: wrap
-  }
-
-  .blogskills li, .skills li {
-    font-size: .7rem;
-    padding: .3rem .75rem
-  }
-
-  a, #resetColors, #toggleSandbox {
-    font-size: 1.2rem;
-    padding: 6px 16px
-  }
-
-  footer {
-    font-size: 1rem;
-    padding: 1rem 0
-  }
-}
 
 .theme-selector {
   display: flex;

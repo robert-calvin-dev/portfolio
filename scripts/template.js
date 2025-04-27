@@ -128,12 +128,14 @@ insertFooter();
 
 function insertHero() {
   const heroHTML = `
-    <section class="hero"><img class=profile data-image-key="profile" src="images/light/profile.png">
+    <section class="hero">
+    <img class=profile data-image-key="profile" src="images/light/profile.png">
       <div class="textbox">
         <p class="statement"><strong>Hi, I’m Robert Calvin — <br>a graphic designer, writer, web developer and problem
             solver.</strong><br><br>I help individuals and brands tell their story beautifully and effectively — online
           and on paper. From striking visuals to persuasive copy to clean, responsive websites, I deliver cohesive
-          creative that feels as good as it looks.</p>
+          creative that feels as good as it looks.
+       
       </div>
     </section>
   `;
