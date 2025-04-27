@@ -111,10 +111,6 @@ function insertPageParts() {
       <a href="https://www.linkedin.com/in/robert-mitchell-694207316/" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none; ">
         LinkedIn
       </a>
-      |
-      <a href="https://dev.to/robertcalvindev" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none;">
-        DEV.to
-      </a>
     </div>
     <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
   </footer>
