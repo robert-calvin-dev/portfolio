@@ -37,259 +37,299 @@
   "description": "Freelance developer specializing in website design, SEO optimization, and AI-powered strategies."
 }
 </script>
-  <link rel="stylesheet" href="styles/themes.css">
+
+
   <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
-<style>
-  .gif-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
-
-.gif-link {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.gif-link:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  .gif-links-container {
-    flex-direction: column;
-  }
-}
-
-</style>
 </head>
 
-<body class="blur">
+<body  style="background-image: url('images/light/htmlbg.png');" class="blur">
   <header>
-    <div class="navbar">
-      <div class="home"><a href="index.html" class="active">Robert Calvin Marketing</a></div>
-      <div class="nav"><a href="https://github.com/robert-calvin-dev"
-          target="_blank">GitHub</a>
-          <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
-       <a href="blog.html">Blog</a><a href="#contactForm" class="contact-button"
-          id="openModal">Contact</a></div>
-    </div>
-  </header>
+   
+<div class="navbar">
+
+<div class="home">
+<a href="index.html" class="active">Robert Calvin Marketing</a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+</div>
+<br>
+<div class="theme-selector">
+  <button onclick="setTheme('light')">⚪</button>
+  <button onclick="setTheme('dark')">🔵</button>
+  <button onclick="setTheme('retro')">🟠</button>
+  <button onclick="setTheme('neon')">🟡</button>
+  <button onclick="setTheme('cyberpunk')">🟢</button>
+  <button onclick="setTheme('pastel')">🟣</button>
+  <button onclick="setTheme('noir')">🔴</button>
+  </div>
+  <br>
+<div class="nav" id="navLinks">
+<a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
+<a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
+<a href="blog.html">Blog</a>
+<a href="#contactForm" class="contact-button" id="openModal">Contact</a>
+</div>
+</div>
+
+
+</header>
   <main>
-    <section class="hero"><img class=profile data-image-key="profile" src="images/light/profile.png">
-      <div class="textbox">
-        <p class="statement"><strong>Hi, I’m Robert Calvin — <br>a graphic designer, writer, web developer and problem
-            solver.</strong><br><br>I help individuals and brands tell their story beautifully and effectively — online
-          and on paper. From striking visuals to persuasive copy to clean, responsive websites, I deliver cohesive
-          creative that feels as good as it looks.</p>
-      </div>
-    </section>
+<div id="heroContainer"></div>
     <div class="container" id="container">
-      <div class="blogposts">
-        <div class="post">
-          <a class="posttitle" href="quick-add-pro.html">Quick Add Pro</a><br><br>
-          <p class="exerpt">
-            <strong>Bulk Uploads, Smart SEO, and Lightning-Fast Product Management</strong><br>
-            Running a WooCommerce store? Stop wasting time adding products one by one. Quick Add Pro lets you upload, optimize, and publish faster than ever—with live SEO fields, product grouping, smart automation, and more.  
-            <br><br>
-            👉 <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank" style="font-weight: bold; text-decoration: underline;">Visit Quick Add Pro</a><br>
-            <br>
-            👉 <a href="downloads/quick-add.zip" style="font-weight: bold; text-decoration: underline;">Download the Free Version</a>
-          </p>
-          <ul class="blogskills">
-            <li>WooCommerce</li>
-            <li>PluginDevelopment</li>
-            <li>BulkUpload</li>
-            <li>eCommerceOptimization</li>
-          </ul>
-          <h5>Published April 26, 2025</h5>
-        </div>
-        <div class="post"><a class="posttitle" href="ethical-hacking-lab.html">How to build a legal Hacking Lab</a><br><br>
-          <p class="exerpt"><strong>Why Every Business Should Care About Penetration Testing</strong><br>Most clients I
-            work with underestimate how exposed their digital assets really are. Weak passwords, outdated CMS plugins,
-            lazy DNS configurations—these are goldmines for attackers and liability bombs for you. An ethical hacking
-            lab isn’t just a playground for white hats. It’s a professional environment built to simulate real-world
-            attacks on your infrastructure before the bad guys do it for real. </p>
-          <ul class="blogskills">
-            <li>CyberSecurity</li>
-            <li>EthicalHacking</li>
-            <li>LabSetup</li>
-          </ul>
-          <h5>Published March 20, 2025</h5>
-        </div>
-        <div class="post"><a class="posttitle" href="seo-auditing.html">SEO Auditing: Mandatory</a><br><br>
-          <p class="exerpt"><strong>Why Your Website Might Look Great… But Still Be Invisible</strong><br>You’ve spent
-            thousands on web design. Your branding is clean, your copy’s tight, and yet… no traffic. No conversions.
-            Crickets. Here’s the truth most agencies won’t tell you: if your SEO foundation is cracked, no amount of
-            pretty pixels will save you. An SEO audit is not just about keywords. It’s about performance, structure,
-            code, and trust. And I don’t run audits using generic SaaS checkers—I rip your site apart like a mechanic
-            pulls apart an engine. </p>
-          <ul class="blogskills">
-            <li>SEO</li>
-            <li>ClientEducation</li>
-            <li>Performance</li>
-          </ul>
-          <h5>Published March 29, 2025</h5>
-        </div>
-        <div class="post"><a class="posttitle">CSS Color Sandbox</a><br><br>
-          <p class="exerpt"><strong>Click any element on this page to change its background or text
-              color.</strong><br>Interactive CSS sandbox that allows real-time theming. Users can click on-page elements
-            and dynamically apply color changes to backgrounds or text with reset and toggle controls. Built for
-            learning and experimenting with CSS live. </p>
-          <div class="sandbox"><br><label class="sblabel"><input type="radio" name="colorMode" value="background"
-                checked disabled />Background</label><label class="sblabel"><input type="radio" name="colorMode"
-                value="color" disabled />Text</label><br><input class="color" type="color" id="colorPicker"
-              value="#00aaff" disabled />
-            <div><button id="toggleSandbox">🟢 Activate Sandbox</button><button id="resetColors" disabled>🔄 Reset
-                Colors</button><br><br></div>
+      <h2>Services</h2>
+      <section  class="services"><br><br>
+        <div class="servicecards">
+          <div class="service">
+            <h3><a href="#" id="openImageModal">Graphics</a></h3>
+            <p>Logos, Flyers, Social Media Content, Digital Marketing</p>
+          </div><br><br>
+          <div class="service">
+            <h3><a href="#web">Web Design</a></h3>
+            <p>Wordpress, Wix, E-commerce, Blogs, Custom Themes, Content Creation</p>
+          </div><br><br>
+          <div class="service">
+            <h3><a href="#resume">Resumes</a></h3>
+            <p>Custom Templates, Streamlined Content, Modern & Sophisticated</p><br>
+          </div><br><br>
+          <div class="service">
+            <h3><a href="#seo">SEO</a></h3>
+            <p>Keyword Research, Competitor Analysis, Google Analytics</p>
           </div>
-          <ul class="blogskills">
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>DOM Manipulation</li>
-            <li>User Interaction</li>
-            <li>Frontend Tools</li>
-          </ul>
-          <h5>Published April 16, 2025</h5>
-        </div>
-      </div>
+        </div><br>
+      </section>
+    </div>
+  </div>
+    
       <div>
-        <section class="services"><br><br><img class="headerimage" data-image-key="robot" src="images/robot.gif">
-          <h2>Services</h2>
-          <div class="servicecards">
-            <div class="service">
-              <h3><a href="#" id="openImageModal">Graphic Design</a></h3><img class="serviceicon"
-                data-image-key="graphicd" src="images/light/graphicd.png" alt="Graphic Design Icon">
-              <p>Logos, Flyers, Social Media Content, Digital Marketing</p>
-            </div><br><br>
-            <div class="service">
-              <h3><a href="#web">Web Design</a></h3><img class="serviceicon" data-image-key="web"
-                src="images/light/web.png" alt="Web Design Icon">
-              <p>Wordpress, Wix, E-commerce, Blogs, Custom Themes, Content Creation</p>
-            </div><br><br>
-            <div class="service">
-              <h3><a href="#resume">Resume Upgrade</a></h3><img class="serviceicon" data-image-key="resumes"
-                src="images/light/resumes.png" alt="Resume Ipgrade Icon">
-              <p>Custom Templates, Streamlined Content, Modern & Sophisticated</p><br>
-            </div><br><br>
-            <div class="service">
-              <h3><a href="#seo">SEO</a></h3><img class="serviceicon" data-image-key="web" src="images/light/web.png"
-                alt="Web Design Icon">
-              <p>Keyword Research, Competitor Analysis, Google Analytics</p>
+        <section class="featured" id="projects-and-tools">
+          <h2 id="web">Featured Projects & Tools</h2>
+          <div class="carousel-wrapper">
+          
+            <div class="carousel" id="unified-carousel">
+              
+              <!-- Project 1 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>WordPress Plugin</li>
+                    <li>WooCommerce</li>
+                    <li>Bulk Upload</li>
+                    <li>SEO Optimization</li>
+                    <li>Schema Injection</li>
+                    <li>Responsive Admin UI</li>
+                    <li>Performance</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="quickadd" class="card-screenshot" src="images/light/quickadd.png" alt="Quick Add Pro Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>Powerful WooCommerce plugin for ultra-fast product management. Bulk upload, SEO fields, automatic schema, and responsive admin panels—all designed to scale stores faster and smarter.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Project 2 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen Creative</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>WordPress</li>
+                    <li>WooCommerce</li>
+                    <li>Custom Theme</li>
+                    <li>Loyalty System</li>
+                    <li>SEO</li>
+                    <li>Responsive Design</li>
+                    <li>Performance</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="glitter" class="card-screenshot" src="images/light/glitter.png" alt="Glitter Queen Creative Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product filtering, loyalty system, and SEO-rich product descriptions.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">The Pour Choice</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>Brand Identity</li>
+                    <li>Web Design</li>
+                    <li>Responsive Layout</li>
+                    <li>Menu Integration</li>
+                    <li>Performance Optimization</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="wine" class="card-screenshot" src="images/light/wine.png" alt="The Pour Choice Website Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>A clean, stylish website built for The Pour Choice project—focusing on brand clarity, menu integration, fast loading times, and mobile responsiveness to engage a modern beverage audience.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">Uncle Jimbo DJ Pad</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>Interactive App</li>
+                    <li>Sound Integration</li>
+                    <li>Custom UI</li>
+                    <li>Mobile Optimization</li>
+                    <li>Fun User Experience</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="djpad" class="card-screenshot" src="images/light/djpad.png" alt="Uncle Jimbo DJ Pad Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>A playful, mobile-optimized DJ pad built for Uncle Jimbo's mixes — featuring live audio triggers, interactive design, and an intuitive touch experience perfect for DJs and fans alike.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Project 3 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">Clock Dashboard</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>Theme Toggle</li>
+                    <li>Audio/Video Logic</li>
+                    <li>Numerology Engine</li>
+                    <li>Astrology</li>
+                    <li>State Management</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="clock" class="card-screenshot" src="images/light/clock.png" alt="Clock Dashboard Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>Interactive dashboard blending a live clock, mood-based ambient visuals and audio, a personalized numerology calculator, and astrology insights. Built for emotional awareness and ritual enhancement.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://github.com/robert-calvin-dev/seo-auditor" target="_blank">SEO Auditor</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>SEO Tool</li>
+                    <li>Technical SEO</li>
+                    <li>Site Audits</li>
+                    <li>Python Scripts</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="seo" class="card-screenshot" src="images/light/seo.png" alt="SEO Auditor Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>Powerful SEO auditing tool built to uncover technical issues, optimize performance, and improve site ranking through deep analysis and clean reporting.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Tool 2 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="skills-used">
+                    <a href="https://github.com/robert-calvin-dev/calorie-tracker" target="_blank">Calorie Tracker</a>
+                  </div>
+                  <ul class="blogskills">
+                    <li>Health App</li>
+                    <li>Calorie Monitoring</li>
+                    <li>Responsive Design</li>
+                    <li>Data Visualization</li>
+                  </ul>
+                  <div class="card-screenshot-container">
+                    <img data-image-key="calorie" class="card-screenshot" src="images/light/calorie.png" alt="Calorie Tracker Screenshot">
+                  </div>
+                  <div class="card-overview">
+                    <p>Simple and efficient calorie tracking app with an intuitive UI and real-time data visualization to help users monitor their daily intake and fitness goals.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="next">
+            <button class="carousel-nav prev" style="display: none;">◀</button>
+             <button class="carousel-nav next">▶</button>
+          </div>
           </div><br>
         </section>
-      </div>
-    </div>
-    <section class="featured" style="border-top: var(--borderone);">
-      <h2 id="web">Featured Projects</h2>
-      <div class="carousel-wrapper"><button class="carousel-nav prev" style="display: none;">◀</button>
-        <div class="carousel" id="carousel">
-          <div class="carousel-slide">
-            <div class="project-card">
-              <div class="skills-used">
-                <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
-              </div>
-              <ul class="blogskills">
-                <li>WordPress Plugin</li>
-                <li>WooCommerce</li>
-                <li>Bulk Upload</li>
-                <li>SEO Optimization</li>
-                <li>Schema Injection</li>
-                <li>Responsive Admin UI</li>
-                <li>Performance</li>
-              </ul>
-              <div class="card-screenshot-container" style="text-align: center;">
-                <img class="card-screenshot" src="images/quick-add.png" alt="Quick Add Pro Screenshot">
-              </div>
-              <div class="card-overview" style="text-align: center;">
-                <p>Powerful WooCommerce plugin for ultra-fast product management. Bulk upload, SEO fields, automatic schema, and responsive admin panels—all designed to scale stores faster and smarter.</p>
-              </div>
-            </div>
+
+        <div   class="blogposts">
+          <div class="post">
+            <a class="posttitle" href="quick-add-pro.html">Quick Add Pro</a><br><br>
+            <p class="exerpt">
+              <strong>Bulk Uploads, Smart SEO, and Lightning-Fast Product Management</strong><br>
+              Running a WooCommerce store? Stop wasting time adding products one by one. Quick Add Pro lets you upload, optimize, and publish faster than ever—with live SEO fields, product grouping, smart automation, and more.  
+              <br><br>
+              👉 <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Visit Quick Add Pro</a><br>
+              <br>
+              👉 <a href="downloads/quick-add.zip" >Download the Free Version</a>
+            </p>
+            <ul class="blogskills">
+              <li>WooCommerce</li>
+              <li>PluginDevelopment</li>
+              <li>BulkUpload</li>
+              <li>eCommerceOptimization</li>
+            </ul>
+            <h5>Published April 26, 2025</h5>
           </div>
-          
-          <div class="carousel-slide">
-            <div class="project-card">
-              <div class="skills-used"><a href="https://glitterqueencreative.ca" target="_blank">Glitter Queen
-                  Creative</a></div>
-              <ul class="blogskills">
-                <li>WordPress</li>
-                <li>WooCommerce</li>
-                <li>Custom Theme</li>
-                <li>Loyalty System</li>
-                <li>SEO</li>
-                <li>Responsive Design</li>
-                <li>Performance</li>
-              </ul>
-              <div class="card-screenshot-container" style="text-align: center;"><img class="card-screenshot"
-                  src="images/glitterqueenscreenshot.png" alt="Glitter Queen Creative Screenshot"></div>
-              <div class="card-overview" style="text-align: center;">
-                <p>WordPress e-commerce site for luxury handmade jewelry. Custom WooCommerce setup with product
-                  filtering, loyalty system, and SEO-rich product descriptions.</p>
-              </div>
-            </div>
+          <div class="post"><a class="posttitle" href="ethical-hacking-lab.html">How to build a legal Hacking Lab</a><br><br>
+            <p class="exerpt"><strong>Why Every Business Should Care About Penetration Testing</strong><br>Most clients I
+              work with underestimate how exposed their digital assets really are. Weak passwords, outdated CMS plugins,
+              lazy DNS configurations—these are goldmines for attackers and liability bombs for you. An ethical hacking
+              lab isn’t just a playground for white hats. It’s a professional environment built to simulate real-world
+              attacks on your infrastructure before the bad guys do it for real. </p>
+            <ul class="blogskills">
+              <li>CyberSecurity</li>
+              <li>EthicalHacking</li>
+              <li>LabSetup</li>
+            </ul>
+            <h5>Published March 20, 2025</h5>
           </div>
-          <div class="carousel-slide">
-            <div class="project-card">
-              <div class="skills-used"><a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html"
-                  target="_blank">Clock Dashboard</a></div>
-              <ul class="blogskills">
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Theme Toggle</li>
-                <li>Audio/Video Logic</li>
-                <li>Numerology Engine</li>
-                <li>Astrology</li>
-                <li>State Management</li>
-              </ul>
-              <div class="card-screenshot-container" style="text-align: center;"><img class="card-screenshot"
-                  src="images/clockscreenshot.png" alt="Clock Dashboard Screenshot"></div>
-              <div class="card-overview" style="text-align: center;">
-                <p>Interactive dashboard blending a live clock, mood-based ambient visuals and audio, a personalized
-                  numerology calculator, and astrology insights. Built for emotional awareness and ritual enhancement.
-                </p>
-              </div>
-            </div>
+          <div class="post"><a class="posttitle" href="seo-auditing.html">SEO Auditing: Mandatory</a><br><br>
+            <p class="exerpt"><strong>Why Your Website Might Look Great… But Still Be Invisible</strong><br>You’ve spent
+              thousands on web design. Your branding is clean, your copy’s tight, and yet… no traffic. No conversions.
+              Crickets. Here’s the truth most agencies won’t tell you: if your SEO foundation is cracked, no amount of
+              pretty pixels will save you. An SEO audit is not just about keywords. It’s about performance, structure,
+              code, and trust. And I don’t run audits using generic SaaS checkers—I rip your site apart like a mechanic
+              pulls apart an engine. </p>
+            <ul class="blogskills">
+              <li>SEO</li>
+              <li>ClientEducation</li>
+              <li>Performance</li>
+            </ul>
+            <h5>Published March 29, 2025</h5>
           </div>
-        </div><button class="carousel-nav next">▶</button>
-        <br>
-      </div>
-    </section>
-    <section class="featured" id="tools">
-      <h2>Featured Tools</h2>
-      <div class="carousel-wrapper"><button class="carousel-nav prev">◀</button>
-        <div class="carousel" id="carousel-tools">
-          <div class="carousel-slide">
-            <div class="tools">
-              <div id="seo"><img class="blogbanner" src="images/SEO.png" alt="SEO Auditor"></div><br><a
-                href="https://github.com/robert-calvin-dev/seo-auditor" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <div class="tools">
-              <div><img class="blogbanner" src="images/Calorie.png" alt="Calorie Tracker"></div><br><a
-                href="https://github.com/robert-calvin-dev/calorie-tracker" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-        </div><button class="carousel-nav next">▶</button>
-      </div><br>
-    </section>
+ 
+        </div>
+        
+
+    
+   
+
     <section id="about" class="am">
       <div class="aboutme">
+        <h2>About Robert Calvin</h2>
         <p>In addition to design technologies, I bring a strong background in <strong>Customer Service
             Management</strong> across <strong>Liquor & Beverage, Cannabis, Corporate Restaurants, Grocery,
             Cosmetics,</strong> and <strong>Fashion. </strong>I’ve also collaborated with <strong>entertainment
@@ -360,43 +400,17 @@
     </div>
   </section>
   
-  <footer><br>
-    <a href="tel:+1234567890">236 339 1498</a>
-    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
-    <section class="gif-links-container">
-      <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">
-        <img src="images/mysticclock.gif" alt="Mystic Clock" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">
-        <img src="images/pourchoice.gif" alt="The Pour Choice" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">
-        <img src="images/quickaddpro.gif" alt="Quick Add Pro" class="gif-link">
-      </a>
-      <a href="https://glitterqueencreative.ca" target="_blank">
-        <img src="images/gq.gif" alt="Glitter Queen" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">
-        <img src="images/ujdjpad.gif" alt="Uncle Jimbo DJ Pad" class="gif-link">
-      </a>
-    </section>
-    <p>Connect with me:</p>
-    <div style="margin: 1rem 0;">
-      <a href="https://www.facebook.com/robbie.calvin.2025" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none; ">
-        Facebook
-      </a>
-      |
-      <a href="https://www.linkedin.com/in/robert-mitchell-694207316/" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none; ">
-        LinkedIn
-      </a>
-      |
-      <a href="https://dev.to/robertcalvindev" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none;">
-        DEV.to
-      </a>
-    </div>
-    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
-  </footer>
-  <script src="scripts/template.js"></script>
+<div id="footerContainer"></div>
+       <script src="scripts/template.js"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
   <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
   <script>const colorPicker = document.getElementById('colorPicker'); const resetBtn = document.getElementById('resetColors'); const toggleBtn = document.getElementById('toggleSandbox'); const colorModeRadios = document.querySelectorAll('input[name="colorMode"]'); const originalStyles = new Map(); let sandboxActive = false; toggleBtn.addEventListener('click', () => { sandboxActive = !sandboxActive; toggleBtn.textContent = sandboxActive ? '🔴 Deactivate Sandbox' : '🟢 Activate Sandbox'; colorPicker.disabled = !sandboxActive; resetBtn.disabled = !sandboxActive; colorModeRadios.forEach(radio => radio.disabled = !sandboxActive); }); document.body.addEventListener('click', (e) => { if (!sandboxActive) return; const target = e.target; if (target.closest('.sandbox')) return; e.preventDefault(); e.stopPropagation(); const mode = document.querySelector('input[name="colorMode"]:checked').value; const styleProp = mode === 'background' ? 'backgroundColor' : 'color'; if (!originalStyles.has(target)) { originalStyles.set(target, target.style[styleProp]); } target.style[styleProp] = colorPicker.value; }); resetBtn.addEventListener('click', () => { for (const [el, original] of originalStyles.entries()) { el.style.backgroundColor = ''; el.style.color = ''; } originalStyles.clear(); }); </script>
   <script>const carousels = document.querySelectorAll('.carousel'); carousels.forEach((carousel, i) => { const slides = carousel.querySelectorAll('.carousel-slide'); let currentIndex = 0; const prev = carousel.parentElement.querySelector('.carousel-nav.prev'); const next = carousel.parentElement.querySelector('.carousel-nav.next'); function scrollToIndex(index) { const slide = slides[index]; if (slide) { slide.scrollIntoView({ behavior: 'smooth', inline: 'start' }); prev.style.display = index > 0 ? 'inline-block' : 'none'; next.style.display = index < slides.length - 1 ? 'inline-block' : 'none'; } } prev.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.max(0, currentIndex - 1); scrollToIndex(currentIndex); }); next.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.min(slides.length - 1, currentIndex + 1); scrollToIndex(currentIndex); }); scrollToIndex(currentIndex); }); </script>
@@ -407,6 +421,7 @@
       }, 50); // slight delay to override other forces
     });
   </script>
+
 
 </body>
 

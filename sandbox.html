@@ -19,8 +19,10 @@
 <meta name="twitter:image" content="https://robert-calvin-dev.github.io/portfolio/images/light/profile.png">
 
 
-<link rel="stylesheet" href="styles/theme.css">
+
+  <link rel="stylesheet" href="styles/theme.css">
   <link rel="stylesheet" href="styles/components.css">
+
 </head>
 <body class="blur">
   <header>
@@ -53,97 +55,123 @@
 
 </header>
   <main>
-    <div class="blogposts">
-      <div class="post">
-        <h1>🧪 How to Build an Ethical Hacking Lab</h1>
-        <h5>Published: April 16, 2025</h5>
-        <ul class="blogskills">
-          <li>Cybersecurity</li>
-          <li>EthicalHacking</li>
-          <li>LabSetup</li>
-          <li>PenTesting</li>
-          <li>ClientSecurity</li>
-        </ul>
 
-        <h3>Why Every Business Should Care About Penetration Testing</h3>
-        <p>Most clients I work with underestimate how exposed their digital assets really are. Weak passwords, outdated CMS plugins, lazy DNS configurations—these are goldmines for attackers and liability bombs for you. An ethical hacking lab isn’t just a playground for white hats. It’s a professional environment built to simulate real-world attacks on your infrastructure before the bad guys do it for real.</p>
-
-        <h3>Phase 1: Define Your Scope (Legal + Targeted)</h3>
-        <ul>
-          <li>❗ Only test systems you own or have explicit permission to audit.</li>
-          <li>Pick your focus: Web apps, APIs, IoT devices, cloud environments?</li>
-          <li>Draft a scope agreement: Clearly outline what systems are in bounds and what tools will be used.</li>
-          <li>Keep a log: Every action in your lab should be reproducible and justifiable.</li>
-        </ul>
-
-        <h3>Phase 2: Set Up Your Environment</h3>
-        <h4>🖥️ Virtualization Stack</h4>
-        <ul>
-          <li>Install VirtualBox or VMware</li>
-          <li>Create multiple VMs:
-            <ul>
-              <li>Kali Linux: attacker box (with all your tools)</li>
-              <li>Metasploitable / DVWA: intentionally vulnerable targets</li>
-              <li>Ubuntu Server / Windows 10: simulate real-world systems</li>
-            </ul>
-          </li>
-          <li>Networking: Use host-only or internal networking to stay sandboxed</li>
-          <li>Add a pfSense firewall for realism</li>
-        </ul>
-
-        <h4>🛠️ Toolchain Essentials</h4>
-        <p>Inside Kali (or Parrot OS), run:</p>
-        <pre><code>sudo apt update && sudo apt upgrade
-sudo apt install nmap metasploit-framework gobuster sqlmap burpsuite john hashcat</code></pre>
-        <p>Also useful: Wireshark, Dirb, Hydra, Enum4linux, BloodHound, reportlab (Python3)</p>
-
-        <h3>Phase 3: Real-World Workflow Example</h3>
-        <p><strong>Reconnaissance</strong><br>
-nmap -sC -sV target.com</p>
-        <p><strong>Enumeration</strong><br>
-gobuster dir -u http://target.com -w wordlist.txt</p>
-        <p><strong>Exploitation</strong><br>
-sqlmap -u "http://target.com/login.php?user=admin"</p>
-        <p><strong>Credential Testing</strong><br>
-hydra -l admin -P rockyou.txt target.com ssh</p>
-        <p><strong>Reporting</strong><br>All findings logged in Markdown → converted to client-facing PDF via Python/reportlab</p>
-
-        <h3>My Ethical Commitment</h3>
-        <p>Every test I conduct is logged, scoped, and delivered with full transparency. Clients don’t just get alerts—they get education, remediation guidance, and custom hardening suggestions.</p>
-
-        <h3>Want Your Own Pen Test?</h3>
-        <p>If you’re unsure whether your website or systems can withstand a targeted attack, I can walk you through a scoped test—and build you a private lab if you want to learn hands-on.</p>
-        <p><strong>👉 Contact me now</strong></p>
-      </div>
-    </div>
-
-    <section style="background-color: var(--backgrounds);">
-      <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-content"><button class="modal-close" id="closeModal">&times;</button>
-          <form action="https://formspree.io/f/mqapwbdo" method="POST" class="contact-form">
-            <h2>Start Your Project</h2><label for="name">Name</label><input type="text" id="name" name="name" required
-              placeholder="Your full name"><label for="email">Email</label><input type="email" id="email" name="email"
-              required placeholder="you@example.com"><label for="service">Type of Service</label><select id="service"
-              name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="Graphic Design">Graphic Design</option>
-              <option value="Web Design">Web Design</option>
-              <option value="Resume Upgrades">Resume Upgrades</option>
-              <option value="App Development">App Development</option>
-              <option value="Other">Other</option>
-            </select><label for="details">Details (optional)</label><textarea id="details" name="details" rows="5"
-              placeholder="Describe your project in a few sentences"></textarea><button type="submit">SUBMIT</button>
-          </form>
+<div class="blogposts">
+    <div class="post">
+      <h1>🎨 Building an Interactive CSS Color Sandbox</h1>
+      <h5>Published: April 16, 2025</h5>
+      <ul class="blogskills">
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>DOM Manipulation</li>
+        <li>User Interaction</li>
+        <li>Frontend Tools</li>
+      </ul>
+  
+      <h3>Why an Interactive Sandbox Matters</h3>
+      <p>Learning CSS and JavaScript becomes much more effective when users can visually and instantly see changes. A color sandbox allows real-time experimentation with styles without having to refresh the page or edit static files manually.</p>
+  
+      <h3>Phase 1: Structure the Sandbox</h3>
+      <ul>
+        <li>🖼️ Create a simple HTML layout with a variety of clickable elements.</li>
+        <li>🎯 Add radio buttons to toggle between changing <strong>Background</strong> and <strong>Text</strong> colors.</li>
+        <li>🎨 Integrate a color picker input to allow users to choose any color dynamically.</li>
+      </ul>
+  
+      <h3>Phase 2: Code the Interactivity</h3>
+      <h4>🛠️ JavaScript Setup</h4>
+      <p>Key components involve event listeners on the entire document body, color mode toggles, and resetting styles when needed.</p>
+      <pre><code>document.addEventListener('DOMContentLoaded', function() {
+    const colorPicker = document.getElementById('colorPicker');
+    const resetBtn = document.getElementById('resetColors');
+    const toggleBtn = document.getElementById('toggleSandbox');
+  
+    let sandboxActive = false;
+    let originalStyles = new Map();
+  
+    toggleBtn.addEventListener('click', () => {
+      sandboxActive = !sandboxActive;
+      toggleBtn.textContent = sandboxActive ? '🔴 Deactivate Sandbox' : '🟢 Activate Sandbox';
+      colorPicker.disabled = !sandboxActive;
+      resetBtn.disabled = !sandboxActive;
+    });
+  
+    document.body.addEventListener('click', (e) => {
+      if (!sandboxActive) return;
+      const target = e.target;
+      const mode = document.querySelector('input[name="colorMode"]:checked').value;
+      const styleProp = mode === 'background' ? 'backgroundColor' : 'color';
+      if (!originalStyles.has(target)) {
+        originalStyles.set(target, target.style[styleProp]);
+      }
+      target.style[styleProp] = colorPicker.value;
+    });
+  
+    resetBtn.addEventListener('click', () => {
+      for (const [element, original] of originalStyles.entries()) {
+        element.style.backgroundColor = '';
+        element.style.color = '';
+      }
+      originalStyles.clear();
+    });
+  });</code></pre>
+  
+      <h3>Phase 3: Try It Yourself!</h3>
+      <p>Below is the live color sandbox. Activate it, pick a color, and click on any element on the page:</p>
+  
+      <div class="sandbox">
+        <label class="sblabel">
+          <input type="radio" name="colorMode" value="background" checked disabled />Background
+        </label>
+        <label class="sblabel">
+          <input type="radio" name="colorMode" value="color" disabled />Text
+        </label>
+        <input class="color" type="color" id="colorPicker" value="#00aaff" disabled />
+        <div>
+          <button id="toggleSandbox">🟢 Activate Sandbox</button>
+          <button id="resetColors" disabled>🔄 Reset Colors</button>
         </div>
       </div>
-    </section>
+  
+      <h3>Real World Use Cases</h3>
+      <p>Interactive tools like this are perfect for:
+        <ul>
+          <li>⚡ Live CSS demos in portfolio projects</li>
+          <li>🎯 Teaching frontend development concepts</li>
+          <li>🧠 Improving user interaction design skills</li>
+          <li>🛠️ Creating experimental prototyping tools</li>
+        </ul>
+      </p>
+  
+      <h3>Want to Build More Interactive Tools?</h3>
+      <p>If you're excited about building more dynamic and immersive frontend projects, keep experimenting! Small projects like this lay the foundation for larger apps, games, and interactive websites.</p>
+      <p><strong>👉 Contact me for collaborations or coding mentorship.</strong></p>
+    </div>
+  </div>
 
-
-
+  <section style="background-color: var(--backgrounds);">
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content"><button class="modal-close" id="closeModal">&times;</button>
+        <form action="https://formspree.io/f/mqapwbdo" method="POST" class="contact-form">
+          <h2>Start Your Project</h2><label for="name">Name</label><input type="text" id="name" name="name" required
+            placeholder="Your full name"><label for="email">Email</label><input type="email" id="email" name="email"
+            required placeholder="you@example.com"><label for="service">Type of Service</label><select id="service"
+            name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Resume Upgrades">Resume Upgrades</option>
+            <option value="App Development">App Development</option>
+            <option value="Other">Other</option>
+          </select><label for="details">Details (optional)</label><textarea id="details" name="details" rows="5"
+            placeholder="Describe your project in a few sentences"></textarea><button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
 <div id="footerContainer"></div>
-
-       <script src="scripts/template.js"></script>
+     <script src="scripts/template.js"></script>
   <script>
     const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
@@ -163,5 +191,6 @@ menuToggle.addEventListener('click', () => {
       }, 50); // slight delay to override other forces
     });
   </script>
+ 
 </body>
 </html>

@@ -18,131 +18,42 @@
 <meta name="twitter:description" content="Explore cutting-edge tech discussions, freelance advice, and portfolio tips.">
 <meta name="twitter:image" content="https://robert-calvin-dev.github.io/portfolio/images/light/profile.png">
 
-<link rel="stylesheet" href="styles/themes.css">
+<link rel="stylesheet" href="styles/theme.css">
 <link rel="stylesheet" href="styles/components.css">
 <link href="https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
-<style>
-  a {
-    font-size: 0.8rem;
-  }
-  .blogposts {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .post {
-    width: 100%;
-    padding: 2rem;
-    background: var(--backgrounds);
-    border: 1px solid var(--btnbg);
-    border-radius: 10px;
-  }
-  .posttitle {
-    font-size: 1.4rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  .exerpt {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  .blogskills {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0.5rem 0;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-  .blogskills li {
-    background: var(--btnbg);
-    padding: 0.3rem 0.6rem;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    color: white;
-  }
-  h5 {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: gray;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: var(--backgrounds);
-    border-bottom: 2px solid var(--btnbg);
-  }
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .navbar a:hover {
-    color: var(--strong);
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-family: 'Orbitron', sans-serif;
-  }
-  .home a {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 800;
-    font-size: 1.8rem;
-  }
-  .gif-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
 
-.gif-link {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.gif-link:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  .gif-links-container {
-    flex-direction: column;
-  }
-}
-
-</style>
 </head>
 <body class="blur">
   <header>
-    <div class="navbar">
-      <div class="home">
-        <a href="index.html" class="active" style="font-size: 1.6rem; font-weight: bold;">Robert Calvin Marketing</a>
-      </div>
-      <div class="nav" style="gap: 1.5rem; font-size: 1rem;">
-        <a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
-        <a href="blog.html">Blog</a>
-        <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
-        <a href="#contactForm" class="contact-button" id="openModal">Contact</a>
-      </div>
-    </div>
-  </header>
+   
+<div class="navbar">
 
+<div class="home">
+<a href="index.html" class="active">Robert Calvin Marketing</a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+</div>
+<br>
+<div class="theme-selector">
+  <button onclick="setTheme('light')">⚪</button>
+  <button onclick="setTheme('dark')">🔵</button>
+  <button onclick="setTheme('retro')">🟠</button>
+  <button onclick="setTheme('neon')">🟡</button>
+  <button onclick="setTheme('cyberpunk')">🟢</button>
+  <button onclick="setTheme('pastel')">🟣</button>
+  <button onclick="setTheme('noir')">🔴</button>
+  </div>
+  <br>
+<div class="nav" id="navLinks">
+<a href="https://github.com/robert-calvin-dev" target="_blank">GitHub</a>
+<a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">Quick Add Pro</a>
+<a href="blog.html">Blog</a>
+<a href="#contactForm" class="contact-button" id="openModal">Contact</a>
+</div>
+</div>
+
+
+</header>
   <main class="blogger">
     <div class="blogposts">
       
@@ -170,6 +81,22 @@
           <li>SEO</li>
           <li>ClientEducation</li>
           <li>Performance</li>
+        </ul>
+        <h5>Published April 16, 2025</h5>
+      </div>
+
+      <div class="post">
+        <a class="posttitle" href="sandbox.html">🎨 CSS Color Sandbox</a>
+        <p class="exerpt">
+          <strong>Click Any Element and Change its Colors Live</strong><br>
+          An interactive CSS sandbox that lets users click any page element and dynamically change its background or text color, with real-time updates and reset functionality.
+        </p>
+        <ul class="blogskills">
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>DOM Manipulation</li>
+          <li>User Interaction</li>
+          <li>Frontend Tools</li>
         </ul>
         <h5>Published April 16, 2025</h5>
       </div>
@@ -227,54 +154,32 @@
         </div>
       </div>
     </section>
-  </main>
-  <footer><br>
-    <a href="tel:+1234567890">236 339 1498</a>
-    <p><a href="mailto:robert.calvin.dev@gmail.com">robert.calvin.dev@gmail.com</a></p>
-    <section class="gif-links-container">
-      <a href="https://robert-calvin-dev.github.io/mysticclock/personlization.html" target="_blank">
-        <img src="images/mysticclock.gif" alt="Mystic Clock" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/the-pour-choice/" target="_blank">
-        <img src="images/pourchoice.gif" alt="The Pour Choice" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/quickaddpro/" target="_blank">
-        <img src="images/quickaddpro.gif" alt="Quick Add Pro" class="gif-link">
-      </a>
-      <a href="https://glitterqueencreative.ca" target="_blank">
-        <img src="images/gq.gif" alt="Glitter Queen" class="gif-link">
-      </a>
-      <a href="https://robert-calvin-dev.github.io/UncleJimboPad/djmixer.html" target="_blank">
-        <img src="images/ujdjpad.gif" alt="Uncle Jimbo DJ Pad" class="gif-link">
-      </a>
-    </section>
-    <p>Connect with me:</p>
-    <div style="margin: 1rem 0;">
-      <a href="https://www.facebook.com/robbie.calvin.2025" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none; ">
-        Facebook
-      </a>
-      |
-      <a href="https://www.linkedin.com/in/robert-mitchell-694207316/" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none; ">
-        LinkedIn
-      </a>
-      |
-      <a href="https://dev.to/robertcalvindev" target="_blank" rel="noopener noreferrer" style="margin: 0 1rem; text-decoration: none;">
-        DEV.to
-      </a>
-    </div>
-    <p>&copy; 2025 Robert Calvin. All rights obliterated.</p>
-  </footer>
 
-<script src="scripts/template.js"></script>
-<script>
-const openBtn = document.getElementById('openModal');
-const closeBtn = document.getElementById('closeModal');
-const modal = document.getElementById('modalOverlay');
-const body = document.body;
-openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); });
-closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); });
-window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } });
-</script>
+
+  </main>
+ <div id="footerContainer"></div>
+
+     <script src="scripts/template.js"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+  <script>const openBtn = document.getElementById('openModal'); const closeBtn = document.getElementById('closeModal'); const modal = document.getElementById('modalOverlay'); const body = document.body; openBtn.addEventListener('click', () => { modal.classList.add('active'); body.classList.add('modal-active'); }); closeBtn.addEventListener('click', () => { modal.classList.remove('active'); body.classList.remove('modal-active'); }); window.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); body.classList.remove('modal-active'); } }); const openImageBtn = document.getElementById('openImageModal'); const closeImageBtn = document.getElementById('closeImageModal'); const imageModal = document.getElementById('imageModalOverlay'); openImageBtn.addEventListener('click', (e) => { e.preventDefault(); imageModal.classList.add('active'); body.classList.add('modal-active') }); imageModal.addEventListener('click', () => { imageModal.classList.remove('active'); body.classList.remove('modal-active') }); window.addEventListener('click', (e) => { if (e.target === imageModal) { imageModal.classList.remove('active'); body.classList.remove('modal-active'); } }); </script>
+  <script>const colorPicker = document.getElementById('colorPicker'); const resetBtn = document.getElementById('resetColors'); const toggleBtn = document.getElementById('toggleSandbox'); const colorModeRadios = document.querySelectorAll('input[name="colorMode"]'); const originalStyles = new Map(); let sandboxActive = false; toggleBtn.addEventListener('click', () => { sandboxActive = !sandboxActive; toggleBtn.textContent = sandboxActive ? '🔴 Deactivate Sandbox' : '🟢 Activate Sandbox'; colorPicker.disabled = !sandboxActive; resetBtn.disabled = !sandboxActive; colorModeRadios.forEach(radio => radio.disabled = !sandboxActive); }); document.body.addEventListener('click', (e) => { if (!sandboxActive) return; const target = e.target; if (target.closest('.sandbox')) return; e.preventDefault(); e.stopPropagation(); const mode = document.querySelector('input[name="colorMode"]:checked').value; const styleProp = mode === 'background' ? 'backgroundColor' : 'color'; if (!originalStyles.has(target)) { originalStyles.set(target, target.style[styleProp]); } target.style[styleProp] = colorPicker.value; }); resetBtn.addEventListener('click', () => { for (const [el, original] of originalStyles.entries()) { el.style.backgroundColor = ''; el.style.color = ''; } originalStyles.clear(); }); </script>
+  <script>const carousels = document.querySelectorAll('.carousel'); carousels.forEach((carousel, i) => { const slides = carousel.querySelectorAll('.carousel-slide'); let currentIndex = 0; const prev = carousel.parentElement.querySelector('.carousel-nav.prev'); const next = carousel.parentElement.querySelector('.carousel-nav.next'); function scrollToIndex(index) { const slide = slides[index]; if (slide) { slide.scrollIntoView({ behavior: 'smooth', inline: 'start' }); prev.style.display = index > 0 ? 'inline-block' : 'none'; next.style.display = index < slides.length - 1 ? 'inline-block' : 'none'; } } prev.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.max(0, currentIndex - 1); scrollToIndex(currentIndex); }); next.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); currentIndex = Math.min(slides.length - 1, currentIndex + 1); scrollToIndex(currentIndex); }); scrollToIndex(currentIndex); }); </script>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 50); // slight delay to override other forces
+    });
+  </script>
+
 
 </body>
 </html>

@@ -1,0 +1,179 @@
+/* BASE VARIABLES (Shared Defaults) */
+:root {
+    --backgrounds: #021221d2;
+    --bgblend: #00000097;
+    --bg: #000831;
+    --btnbg: #333;
+    --btnhover: #fff;
+    --bghover: rgba(41, 155, 3, 0.828);
+    --bordertwo: 2px solid #f0f002;
+    --borderone: 1px solid #fff;
+    --text: #fff;
+    --headings: #ffff00;
+    --labels: rgba(12, 49, 197, 0.828);
+    --strong: #00ecd8;
+    --card-gradient-start: #054278;
+    --card-gradient-end: #445700;
+    --shadow: #fff;
+    --shadowtwo: rgb(249, 253, 0);
+  }
+
+  html[data-theme='default']  {
+    --backgrounds: #021221d2;
+    --bgblend: #00000097;
+    --bg: #000831;
+    --btnbg: #333;
+    --btnhover: #fff;
+    --bghover: rgba(41, 155, 3, 0.828);
+    --bordertwo: 2px solid #f0f002;
+    --borderone: 1px solid #fff;
+    --text: #fff;
+    --headings: #ffff00;
+    --labels: rgba(12, 49, 197, 0.828);
+    --strong: #00ecd8;
+    --card-gradient-start: #054278;
+    --card-gradient-end: #445700;
+    --shadow: #fff;
+    --shadowtwo: rgb(249, 253, 0);
+  }
+  
+  /* LIGHT THEME */
+  html[data-theme='light'] {
+    --backgrounds: #54bdff;
+    --bgblend: #ffffff6b;
+    --bg: #b5c3d23d;
+    --btnbg: #0099ff;
+    --btnhover: #000;
+    --bghover: #ddd;
+    --text: #000000;
+    --headings: #ffffff;
+    --labels: #ccccff;
+    --strong: #ffffff;
+    --card-gradient-start: hsl(208, 75%, 87%);
+    --card-gradient-end: #268ff8;
+    --shadow: #fff;
+    --shadowtwo: rgb(0, 118, 253);
+    --bordertwo: 2px solid #2f00ff98;
+    --borderone: 1px solid #000000;
+  }
+  
+  /* DARK THEME */
+  html[data-theme='dark'] {
+    --backgrounds: #000000;
+    --bgblend: #000d43;
+    --bg: #38003b;
+    --btnbg: #140158;
+    --btnhover: #000000;
+    --bghover: #ffffff;
+    --text: #ffffff;
+    --headings: #00ffee;
+    --labels: #400053;
+    --strong: #00fff2;
+    --card-gradient-start: #001f3f;
+    --card-gradient-end: #008f86c4;
+    --shadow: #fff;
+    --shadowtwo: rgb(131, 0, 253);
+    --bordertwo: 2px solid #ff00e698;
+    --borderone: 1px solid #ffffff;
+  }
+  
+  /* RETRO THEME */
+  html[data-theme='retro'] {
+    --backgrounds: #f4ecd8;
+    --bgblend: #ffd08a;
+    --bg: #f9f0e6;
+    --btnbg: #c1804f;
+    --btnhover: #fff;
+    --bghover: #d2b48c;
+    --text: #000000;
+    --headings: #ffffff;
+    --labels: #ff9090;
+    --strong: #cd3f3f;
+    --card-gradient-start: #e6d8c3;
+    --card-gradient-end: #a98b52;
+    --shadow: #fff;
+    --shadowtwo: rgb(253, 118, 0);
+    --bordertwo: 2px solid #d00000;
+    --borderone: 1px solid #000000;
+  }
+  
+  /* NEON THEME */
+  html[data-theme='neon'] {
+    --backgrounds: #1dbbc9;
+    --bgblend: #ff89f7d5;
+    --bg: #ff00dd;
+    --btnbg: #b7ff00;
+    --btnhover: #000000;
+    --bghover: #04ff00;
+    --text: #000000;
+    --headings: #ffffff;
+    --labels: #c300ff;
+    --strong: #9500ff;
+    --card-gradient-start: #2fff00;
+    --card-gradient-end: #00f7ff;
+    --shadow: #fff;
+    --shadowtwo: rgb(240, 253, 0);
+    --bordertwo: 2px solid #000000;
+    --borderone: 1px solid #ffffff;
+  }
+  
+  /* CYBERPUNK THEME */
+  html[data-theme='cyberpunk'] {
+    --backgrounds: #050013;
+    --bgblend: #1a0033;
+    --bg: #0c001a;
+    --btnbg: #2c003e;
+    --btnhover: #ffffff;
+    --bghover: #ff0080;
+    --text: #00f0ff;
+    --headings: #ffffff;
+    --labels: #9c27b0;
+    --strong: #ffffff;
+    --card-gradient-start: #6a1b9a;
+    --card-gradient-end: #ad1457;
+    --shadow: #fff;
+    --shadowtwo: rgb(255, 255, 255);
+    --bordertwo: 2px solid #ff0000;
+    --borderone: 1px solid #000000;
+  }
+  
+  /* PASTEL THEME */
+  html[data-theme='pastel'] {
+    --backgrounds: #fbeaff;
+    --bgblend: #f3d9f7;
+    --bg: #debfc9;
+    --btnbg: #e0bbf8;
+    --btnhover: #000;
+    --bghover: #f4a9f3;
+    --text: #3c3c3c;
+    --headings: #ffffff;
+    --labels: #e6ccff;
+    --strong: #80012c;
+    --card-gradient-start: #f000ec;
+    --card-gradient-end: #ffe0f0;
+    --shadow: #fff;
+    --shadowtwo: rgb(0, 0, 0);
+    --bordertwo: 2px solid #ffffff;
+    --borderone: 1px solid #000000;
+  }
+  
+  /* NOIR THEME */
+  html[data-theme='noir'] {
+    --backgrounds: #121212;
+    --bgblend: #3f3e3e;
+    --bg: #555555;
+    --btnbg: #ff6464;
+    --btnhover: #ffffff;
+    --bghover: #000000;
+    --text: #ffffff;
+    --headings: #ff5e5e;
+    --labels: #757575;
+    --strong: #ff8383;
+    --card-gradient-start: #847f7f;
+    --card-gradient-end: #000000;
+    --shadow: #fff;
+    --shadowtwo: rgb(255, 255, 255);
+    --bordertwo: 2px solid #ff0000;
+    --borderone: 1px solid #ffffff;
+  }
+  
