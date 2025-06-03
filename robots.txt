@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://robert-calvin-dev.github.io/portfolio/sitemap.xml
+Sitemap: https://robertcalvinmarketing.ca/sitemap.xml
  
