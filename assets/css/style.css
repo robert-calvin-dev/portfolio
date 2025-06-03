@@ -357,6 +357,12 @@ perspective: 800px;
  padding: 1rem 2rem;
  color: var(--white);
 }
+.nav2 {
+ visibility:hidden;
+}
+a {
+ color: var(--blood-orange);
+}
 
 
  @media (max-width: 768px) {
@@ -365,6 +371,15 @@ perspective: 800px;
    align-items: center;
    text-align: center;
   }
+
+  .nav2 {
+   visibility:visible;
+  }
+  
+  
+   .nav {
+    display: none;
+   }
 
 
 

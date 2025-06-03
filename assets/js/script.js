@@ -1,6 +1,22 @@
 function insertHeader() {
  const headerHTML = `
-<div style="text-align: right; margin-bottom:25px;" class="nav"><a href="/" class="btn"><i class="fas fa-home" style="margin-right: 0.5rem;"></i>Home </a><a href="/about/" class="btn"><i class="fas fa-user" style="margin-right: 0.5rem;"></i>About</a><a href="/seoservices/" class="btn"><i class="fas fa-globe" style="margin-right: 0.5rem;"></i>SEO Services</a><a href="/quickseo/" class="btn"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i>Try Quick SEO</a><a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt" style="margin-right: 0.5rem;"></i>SEO Blog</a></div><img style="width: 100%; box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);" src="/assets/images/FULL STACK SEO SPECIALIST (1).png">
+
+<div style="text-align: right; margin-bottom:25px;" class="nav"><a href="/" class="btn"><i class="fas fa-home"
+   style="margin-right: 0.5rem;"></i>Home </a><a href="/about/" class="btn"><i class="fas fa-user"
+   style="margin-right: 0.5rem;"></i>About</a><a href="/seoservices/" class="btn"><i class="fas fa-globe"
+   style="margin-right: 0.5rem;"></i>SEO Services</a><a href="/quickseo/" class="btn"><i class="fas fa-bolt"
+   style="margin-right: 0.5rem;"></i>Try Quick SEO</a><a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt"
+   style="margin-right: 0.5rem;"></i>SEO Blog</a></div>
+   <div style="text-align: right; margin-bottom:25px;" class="nav2"><a href="/" class="btn"><i class="fas fa-home"
+    style="margin-right: 0.5rem;"></i></a><a href="/about/" class="btn"><i class="fas fa-user"
+    style="margin-right: 0.5rem;"></i></a><a href="/seoservices/" class="btn"><i class="fas fa-globe"
+    style="margin-right: 0.5rem;"></i></a><a href="/quickseo/" class="btn"><i class="fas fa-bolt"
+    style="margin-right: 0.5rem;"></i></a><a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt"
+    style="margin-right: 0.5rem;"></i></a></div>
+   <img
+ style="width: 100%; box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);"
+ src="/assets/images/FULL STACK SEO SPECIALIST (1).png">
+
  `;
  document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('header').innerHTML = headerHTML
@@ -9,16 +25,66 @@ function insertHeader() {
 insertHeader();
 function insertFooter() {
  const footerHTML = `
- <div style="text-align: right; margin-top:25px;" class="nav"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
-    target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Me </a><a
-    href="https://twitter.com/yourhandle" class="btn"><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i>Follow
-    Me </a><a href="https://facebook.com" class="btn" target="_blank"><i class="fab fa-facebook-f"
-      style="margin-right: 0.5rem;"></i>Facebook</a><a href="https://instagram.com" class="btn" target="_blank"><i
-      class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Instagram</a><a
-    href="https://linkedin.com/in/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-linkedin-in"
-      style="margin-right: 0.5rem;"></i>LinkedIn</a><a href="https://github.com/robert-calvin-dev" class="btn"
-    target="_blank"><i class="fab fa-github" style="margin-right: 0.5rem;"></i>GitHub</a></div>
-<footer style="background-color: var(--charcoal); border: 1px solid var(--gray-border); box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); padding: 3rem 2rem; margin-top: 5rem;"><div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;"><div style="flex: 1; min-width: 250px;"><h2 style="color: var(--blood-orange); margin-bottom: 1rem;">Sitemap</h2><div style="display: flex; gap: 2rem;"><ul style="list-style: none; padding: 0;"><li><a href="/" class="sitemap-link">Home</a></li><li><a href="/about/" class="sitemap-link">About</a></li><li><a href="/seoservices/" class="sitemap-link">SEO Services</a></li><li><a href="/casestudies/" class="sitemap-link">Case Studies</a></li><li><a href="/quickseo/" class="sitemap-link">Try QuickSEO</a></li></ul><ul style="list-style: none; padding: 0;"><li><a href="/seoblog" class="sitemap-link">SEO Blog</a></li><li><a href="https://quickwoo.pro" class="sitemap-link">QuickWoo</a></li><li><a href="https://trustedcashloans.com" target="_blank" class="sitemap-link">Trusted Cash Loans</a></li><li><a href="https://glitterqueencreative.ca" target="_blank" class="sitemap-link">Glitter Queen Creative</a></li></ul></div></div><div style="flex: 1; min-width: 250px;"><h2 style="color: var(--blood-orange); margin-bottom: 0.5rem;">Ready to Rank?</h2><p style="margin-bottom: 1rem;">Send me the details of your project and let's make Google obsessed with your site. </p><form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem;"><input type="text" placeholder="Name" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><input type="email" placeholder="Email" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><textarea placeholder="Project Details" rows="5" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"></textarea><button type="submit" class="btn">Submit</button></form></div></div></footer><div style="text-align: center; margin-top: 2rem; padding-bottom: 2rem; color: var(--sun-yellow); font-size: 1.1rem; font-weight: bold;">© 2025 Robert Calvin. All rights reserved. </div>
+
+<div style="text-align: right; margin-top:25px;" class="nav"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
+  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Me </a><a
+  href="https://twitter.com/yourhandle" class="btn"><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i>Follow
+  Me </a><a href="https://facebook.com" class="btn" target="_blank"><i class="fab fa-facebook-f"
+   style="margin-right: 0.5rem;"></i>Facebook</a><a href="https://instagram.com" class="btn" target="_blank"><i
+   class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Instagram</a><a
+  href="https://linkedin.com/in/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-linkedin-in"
+   style="margin-right: 0.5rem;"></i>LinkedIn</a><a href="https://github.com/robert-calvin-dev" class="btn"
+  target="_blank"><i class="fab fa-github" style="margin-right: 0.5rem;"></i>GitHub</a></div>
+
+<div style="text-align: right; margin-top:25px;" class="nav2"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
+  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i></a><a
+  href="https://twitter.com/yourhandle" class="btn"><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i></a><a
+  href="https://facebook.com" class="btn" target="_blank"><i class="fab fa-facebook-f"
+   style="margin-right: 0.5rem;"></i></a><a href="https://instagram.com" class="btn" target="_blank"><i
+   class="fab fa-instagram" style="margin-right: 0.5rem;"></i></a><a href="https://linkedin.com/in/robert-calvin-dev"
+  class="btn" target="_blank"><i class="fab fa-linkedin-in" style="margin-right: 0.5rem;"></i></a><a
+  href="https://github.com/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-github"
+   style="margin-right: 0.5rem;"></i></a></div>
+
+<footer
+ style="background-color: var(--charcoal); border: 1px solid var(--gray-border); box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); padding: 3rem 2rem; margin-top: 5rem;">
+ <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+  <div style="flex: 1; min-width: 250px;">
+   <h2 style="color: var(--blood-orange); margin-bottom: 1rem;">Sitemap</h2>
+   <div style="display: flex; gap: 2rem;">
+    <ul style="list-style: none; padding: 0;">
+     <li><a href="/" class="sitemap-link">Home</a></li>
+     <li><a href="/about/" class="sitemap-link">About</a></li>
+     <li><a href="/seoservices/" class="sitemap-link">SEO Services</a></li>
+     <li><a href="/casestudies/" class="sitemap-link">Case Studies</a></li>
+     <li><a href="/quickseo/" class="sitemap-link">Try QuickSEO</a></li>
+    </ul>
+    <ul style="list-style: none; padding: 0;">
+     <li><a href="/seoblog" class="sitemap-link">SEO Blog</a></li>
+     <li><a href="https://quickwoo.pro" class="sitemap-link">QuickWoo</a></li>
+     <li><a href="https://trustedcashloans.com" target="_blank" class="sitemap-link">Trusted Cash Loans</a></li>
+     <li><a href="https://glitterqueencreative.ca" target="_blank" class="sitemap-link">Glitter Queen Creative</a></li>
+    </ul>
+   </div>
+  </div>
+  <div style="flex: 1; min-width: 250px;">
+   <h2 style="color: var(--blood-orange); margin-bottom: 0.5rem;">Ready to Rank?</h2>
+   <p style="margin-bottom: 1rem;">Send me the details of your project and let's make Google obsessed with your site.
+   </p>
+   <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem;"><input type="text"
+     placeholder="Name"
+     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><input
+     type="email" placeholder="Email"
+     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><textarea
+     placeholder="Project Details" rows="5"
+     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"></textarea><button
+     type="submit" class="btn">Submit</button></form>
+  </div>
+ </div>
+</footer>
+<div
+ style="text-align: center; margin-top: 2rem; padding-bottom: 2rem; color: var(--sun-yellow); font-size: 1.1rem; font-weight: bold;">
+ © 2025 Robert Calvin. All rights reserved. </div>
 `;
  document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('footer').innerHTML = footerHTML
