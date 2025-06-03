@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/blog.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/ethical-hacking-lab.html</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/seo-auditing.html</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/artificial-insignificance.html</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-    <url>
-    <loc>https://robert-calvin-dev.github.io/portfolio/quick-add-pro.html</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-</urlset> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Root Pages -->
+  <url><loc>https://robertcalvinmarketing.ca/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/about/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/casestudies/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/quickseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoservices/</loc></url>
+
+  <!-- Blog Articles -->
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/blackhatseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/brokenlinks/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/cacheingout/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/canonicallinks/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/competitorresearch/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/criticalcss/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/criticaljs/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/everythingyouneedtoknowaboutschema/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/googlepageinsights/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/googlesearchconsole/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/howtobuildbacklinks/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/keywordresearch/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/keywordstuffing/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/lazyloading/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/longtailkeywords/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/metadata101/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/modernimagefiletypes/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/myloveforseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/semrush/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/sitespeedtools/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/top5seosuicidemoves/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/top10bestpracticesforseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/top10seomistakesnewbiesmake/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/usingaiforseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/wanttobeanseospecialist/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/websitetraffic/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/whatisoffpageseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/whatisonpageseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/whatistechnicalseo/</loc></url>
+  <url><loc>https://robertcalvinmarketing.ca/seoblog/yourcontentstrategy/</loc></url>
+</urlset>

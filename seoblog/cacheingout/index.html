@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Configuration for Robert Calvin Portfolio -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="fo-verify" content="00ef70dc-236a-bcseo-r0b3rt-meta-2025" />
+  <title>Cacheing Out | SEO Blog by Robert Calvin</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore how browser caching impacts SEO, Core Web Vitals, and user experience—and how to implement and optimize it correctly.">
+  <meta name="keywords" content="browser caching, seo performance, page speed optimization, caching for SEO, core web vitals">
+  <meta name="author" content="Robert Calvin">
+  <meta name="theme-color" content="#0b0f2f">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/siteicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/siteicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cacheing Out | SEO Blog by Robert Calvin">
+  <meta property="og:description" content="Explore how browser caching impacts SEO, Core Web Vitals, and user experience—and how to implement and optimize it correctly.">
+  <meta property="og:url" content="https://robertcalvinmarketing.ca/cacheingout">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://robertcalvinmarketing.ca/assets/images/cacheingout.png">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cacheing Out | SEO Blog by Robert Calvin">
+  <meta name="twitter:description" content="Explore how browser caching impacts SEO, Core Web Vitals, and user experience—and how to implement and optimize it correctly.">
+  <meta name="twitter:image" content="https://robertcalvinmarketing.ca/assets/images/cacheingout.png">
+
+  <!-- Schema: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Calvin",
+    "jobTitle": "Full-Stack SEO Specialist",
+    "url": "https://yourdomain.com",
+    "email": "mailto:robert.calvin.dev@gmail.com",
+    "telephone": "+1-236-339-1498",
+    "image": "https://robertcalvinmarketing.ca/assets/images/metalogoedition.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "54-1454 Pendrell Street",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "postalCode": "V6G 1S5",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://github.com/robert-calvin-dev",
+      "mailto:robert.calvin.dev@gmail.com",
+      "https://linkedin.com/in/robert-calvin-dev"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Robert Calvin SEO"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Barlow+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header"></div>
+  <h1 style="width: 60%; text-align: center; margin: auto;">Cacheing Out: Why Browser Caching Matters More Than You Think</h1>
+
+  <section>
+    <h2>First Impressions Are Cached Forever</h2>
+    <p>Page speed isn’t just a luxury anymore—it’s a ranking factor. And when every millisecond counts, browser caching becomes a quiet MVP of SEO. Caching allows repeat visitors to load your site faster by storing static assets like CSS, JS, images, and fonts locally in the browser. The less a browser has to re-download, the faster your site feels. The faster it feels, the more likely users are to stay, convert, and trust your content. Google’s Core Web Vitals initiative shines a spotlight on speed and interactivity, meaning your caching policies can directly influence how your site scores—and how it ranks.</p>
+
+    <img src="/assets/images/cacheingout.png" alt="Cache performance illustration" style="display: block; margin: 2rem auto; border: 2px solid var(--blood-orange); max-width: 75%;">
+
+    <h2>The SEO Chain Reaction</h2>
+    <p>Poor caching leads to repeated server requests, bloated load times, and high bounce rates—especially on mobile. This has a domino effect: increased load time weakens UX, which drives down engagement metrics like time on page and scroll depth. Those metrics in turn inform Google’s perception of your page quality and relevance. And while Googlebot doesn’t cache content like a browser does, your caching headers still impact crawl efficiency. A site that feels sluggish is one that risks being deprioritized in favor of faster competitors.</p>
+
+    <p>For content-heavy websites or blogs with large media libraries, caching can be the difference between feeling modern and feeling dated. Your pages might be optimized on the surface—but if every visitor has to redownload a 400kb stylesheet and six hero images every time, you’re creating avoidable lag. Remember, SEO isn’t just content. It’s performance. And caching is one of the lowest-effort, highest-impact wins available.</p>
+
+    <h3>How to Set It Up (The Right Way)</h3>
+    <p>Use proper `Cache-Control` and `Expires` headers in your server configuration. If you're using Apache, configure your `.htaccess` file. On NGINX, it's a block in your server config. Tools like GTmetrix and PageSpeed Insights will flag missing or misconfigured cache headers. Aim to cache static resources for at least a week—often longer if the assets don't change. WordPress users can lean on plugins like WP Rocket, while static site devs can configure caching directly via Netlify or Cloudflare settings. And always bust your cache when you update assets—no one likes broken stylesheets or stale JS files.</p>
+
+    <p>Advanced setups may include cache busting strategies with filename hashing or ETags. But for most SEO-conscious creators, simply enabling long-lived caching headers and monitoring your site’s performance will get you 90% of the benefit. This is not optional anymore. It’s baseline hygiene for a fast, rankable site. If you’re not caching properly, you’re wasting both crawl budget and your users’ patience.</p>
+
+    <a class="btn" href="/quickseo/">Quick SEO Plugin</a>
+    <a class="btn" href="/quickseo/">SEO Services</a>
+  </section>
+
+  <div id="footer"></div>
+  <div class="invisible-seo">
+    <h2>Long Tail Keywords</h2>
+    <p>
+      browser caching seo impact, improve page speed seo, cache headers best practices, site speed optimization tricks, technical seo caching tips, how to enable cache control apache, cache issues seo audit, core web vitals optimization caching, reduce server requests seo, wordpress caching for seo
+    </p>
+  </div>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

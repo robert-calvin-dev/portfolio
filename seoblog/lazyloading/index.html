@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Configuration for Robert Calvin Portfolio -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="fo-verify" content="00ef70dc-236a-bcseo-r0b3rt-meta-2025" />
+  <title>Lazy Loading | SEO Blog by Robert Calvin</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Learn how lazy loading improves site speed, Core Web Vitals, and SEO. Discover how to implement it for images, iframes, and video without breaking UX.">
+  <meta name="keywords" content="lazy loading seo, optimize images for speed, core web vitals boost, lazy load iframes, defer content loading">
+  <meta name="author" content="Robert Calvin">
+  <meta name="theme-color" content="#0b0f2f">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/siteicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/siteicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lazy Loading | SEO Blog by Robert Calvin">
+  <meta property="og:description" content="Learn how lazy loading improves site speed, Core Web Vitals, and SEO. Discover how to implement it for images, iframes, and video without breaking UX.">
+  <meta property="og:url" content="https://robertcalvinmarketing.ca/lazyloading">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://robertcalvinmarketing.ca/assets/images/lazyloading.png">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lazy Loading | SEO Blog by Robert Calvin">
+  <meta name="twitter:description" content="Learn how lazy loading improves site speed, Core Web Vitals, and SEO. Discover how to implement it for images, iframes, and video without breaking UX.">
+  <meta name="twitter:image" content="https://robertcalvinmarketing.ca/assets/images/lazyloading.png">
+
+  <!-- Schema: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Calvin",
+    "jobTitle": "Full-Stack SEO Specialist",
+    "url": "https://yourdomain.com",
+    "email": "mailto:robert.calvin.dev@gmail.com",
+    "telephone": "+1-236-339-1498",
+    "image": "https://robertcalvinmarketing.ca/assets/images/metalogoedition.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "54-1454 Pendrell Street",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "postalCode": "V6G 1S5",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://github.com/robert-calvin-dev",
+      "mailto:robert.calvin.dev@gmail.com",
+      "https://linkedin.com/in/robert-calvin-dev"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Robert Calvin SEO"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Barlow+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header"></div>
+  <h1 style="width: 60%; text-align: center; margin: auto;">Lazy Loading for SEO: How to Make Your Site Faster, Smarter, and Cleaner</h1>
+
+  <section>
+    <h2>What Is Lazy Loading?</h2>
+    <p>Lazy loading is a technique where non-critical resources—usually images, iframes, or videos—are only loaded when they enter (or are about to enter) the user’s viewport. Instead of loading everything at once when the page loads, lazy loading delays resource delivery until needed. The result? Faster initial render, smaller page weight, better Core Web Vitals, and a smoother user experience—especially on mobile. For SEO, it means lower bounce rates and higher engagement, two indirect signals that Google loves.</p>
+
+    <img src="/assets/images/lazyloading.png" alt="Illustration of lazy loading image behavior" style="display: block; margin: 2rem auto; border: 2px solid var(--blood-orange); max-width: 75%;">
+
+    <h2>Where It Helps Most (and Where to Be Careful)</h2>
+    <p>Lazy loading is most effective for below-the-fold images, third-party embeds (like YouTube videos), social media widgets, maps, and long content pages. Use it for blog post thumbnails, ecommerce product grids, and portfolio galleries. Be cautious with critical visuals—above-the-fold images should be preloaded or excluded from lazy loading to avoid layout shifts. Also, ensure lazy-loaded content still appears in your raw HTML or is rendered early enough that crawlers don’t miss it.</p>
+
+    <p>Modern browsers support native lazy loading with `loading="lazy"` on `<img>` and `<iframe>` elements. For more control or animations, use JavaScript libraries like Lozad.js or LazySizes—but keep it lightweight and crawlable.</p>
+
+    <h3>How to Implement It Without Breaking SEO</h3>
+    <p>Start by identifying all non-critical media assets. Replace `<img>` with `<img loading="lazy">` and test your layout. For dynamic or JS-loaded assets, ensure they still render in the DOM without requiring user interaction. Preload key visuals and fonts to keep Largest Contentful Paint (LCP) strong. If using a static site, implement lazy loading during build or deploy using your CDN’s image optimization features. For WordPress, use plugins like Native Lazy Load or Perfmatters—but test frequently to avoid indexing gaps.</p>
+
+    <p>Bonus tip: combine lazy loading with image compression and next-gen formats (like WebP) for maximum speed impact. You’re not just delaying load—you’re reducing it. Google notices.</p>
+
+    <a class="btn" href="/quickseo/">Quick SEO Plugin</a>
+    <a class="btn" href="/quickseo/">SEO Services</a>
+  </section>
+
+  <div id="footer"></div>
+  <div class="invisible-seo">
+    <h2>Long Tail Keywords</h2>
+    <p>
+      lazy loading images for seo, improve lcp with lazy load, native lazy loading html, defer non-critical content, optimize below the fold loading, how to lazy load iframes, reduce initial page weight, lazy loading vs preloading seo, best lazy loading libraries, performance gains with lazy loading
+    </p>
+  </div>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
+
