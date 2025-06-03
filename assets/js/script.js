@@ -28,20 +28,12 @@ function insertFooter() {
 
 <div style="text-align: right; margin-top:25px;" class="nav"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
   target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Me </a><a
-  href="https://twitter.com/yourhandle" class="btn"><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i>Follow
-  Me </a><a href="https://facebook.com" class="btn" target="_blank"><i class="fab fa-facebook-f"
-   style="margin-right: 0.5rem;"></i>Facebook</a><a href="https://instagram.com" class="btn" target="_blank"><i
-   class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Instagram</a><a
   href="https://linkedin.com/in/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-linkedin-in"
    style="margin-right: 0.5rem;"></i>LinkedIn</a><a href="https://github.com/robert-calvin-dev" class="btn"
   target="_blank"><i class="fab fa-github" style="margin-right: 0.5rem;"></i>GitHub</a></div>
 
 <div style="text-align: right; margin-top:25px;" class="nav2"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
-  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i></a><a
-  href="https://twitter.com/yourhandle" class="btn"><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i></a><a
-  href="https://facebook.com" class="btn" target="_blank"><i class="fab fa-facebook-f"
-   style="margin-right: 0.5rem;"></i></a><a href="https://instagram.com" class="btn" target="_blank"><i
-   class="fab fa-instagram" style="margin-right: 0.5rem;"></i></a><a href="https://linkedin.com/in/robert-calvin-dev"
+  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i></a><a href="https://linkedin.com/in/robert-calvin-dev"
   class="btn" target="_blank"><i class="fab fa-linkedin-in" style="margin-right: 0.5rem;"></i></a><a
   href="https://github.com/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-github"
    style="margin-right: 0.5rem;"></i></a></div>

@@ -405,6 +405,10 @@ a {
    align-items: center;
   }
 
+  td {
+   font-size: 0.7;
+  }
+
   .header-layout {
    flex-direction: column;
    align-items: center;
