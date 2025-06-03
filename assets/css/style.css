@@ -372,6 +372,10 @@ a {
    text-align: center;
   }
 
+  .mobileno {
+   visibility: hidden;
+  }
+
   .nav2 {
    visibility:visible;
   }
