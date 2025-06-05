@@ -63,7 +63,10 @@ function insertFooter() {
    <h2 style="color: var(--blood-orange); margin-bottom: 0.5rem;">Ready to Rank?</h2>
    <p style="margin-bottom: 1rem;">Send me the details of your project and let's make Google obsessed with your site.
    </p>
-   <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem;"><input type="text"
+
+   <form action="https://formspree.io/f/mwpbpqww" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+
+   <input type="text"
      placeholder="Name"
      style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><input
      type="email" placeholder="Email"
