@@ -50,8 +50,12 @@ function insertFooter() {
      <li><a href="/seoservices/" class="sitemap-link">SEO Services</a></li>
      <li><a href="/casestudies/" class="sitemap-link">Case Studies</a></li>
      <li><a href="/quickseo/" class="sitemap-link">Try QuickSEO</a></li>
+     <li><a href="/privacypolicy/" class="sitemap-link">Privacy Policy</a></li>
+     <li><a href="/termsandconditions/" class="sitemap-link">Terms and Conditions</a></li>
+     <li><a href="/legal/" class="sitemap-link">Legal</a></li>
     </ul>
     <ul style="list-style: none; padding: 0;">
+     <li><a href="/assets/downloads/Services Guide.pdf" class="sitemap-link">Services Guide</a></li>
      <li><a href="/seoblog" class="sitemap-link">SEO Blog</a></li>
      <li><a href="https://quickwoo.pro" class="sitemap-link">QuickWoo</a></li>
      <li><a href="https://trustedcashloans.com" target="_blank" class="sitemap-link">Trusted Cash Loans</a></li>
