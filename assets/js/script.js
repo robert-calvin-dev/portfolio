@@ -66,14 +66,10 @@ function insertFooter() {
 
    <form action="https://formspree.io/f/mwpbpqww" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
 
-   <input type="text"
-     placeholder="Name"
-     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><input
-     type="email" placeholder="Email"
-     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"><textarea
-     placeholder="Project Details" rows="5"
-     style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"></textarea><button
-     type="submit" class="btn">Submit</button></form>
+   <input type="text" placeholder="Name" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);">
+   <input type="email" name="email" placeholder="Email" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);">
+   <textarea name="message" placeholder="Project Details" rows="5" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--gray-border); background-color: var(--light-charcoal); color: var(--white);"></textarea>
+   <button type="submit" class="btn">Submit</button></form>
   </div>
  </div>
 </footer>
