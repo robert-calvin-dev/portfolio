@@ -1,18 +1,36 @@
 function insertHeader() {
  const headerHTML = `
 
-<div style="text-align: right; margin-bottom:25px;" class="nav"><a href="/" class="btn"><i class="fas fa-home"
-   style="margin-right: 0.5rem;"></i>Home </a><a href="/about/" class="btn"><i class="fas fa-user"
-   style="margin-right: 0.5rem;"></i>About</a><a href="/seoservices/" class="btn"><i class="fas fa-globe"
-   style="margin-right: 0.5rem;"></i>SEO Services</a><a href="/quickseo/" class="btn"><i class="fas fa-bolt"
-   style="margin-right: 0.5rem;"></i>Try Quick SEO</a><a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt"
-   style="margin-right: 0.5rem;"></i>SEO Blog</a></div>
-   <div style="text-align: right; margin-bottom:25px;" class="nav2"><a href="/" class="btn"><i class="fas fa-home"
-    style="margin-right: 0.5rem;"></i></a><a href="/about/" class="btn"><i class="fas fa-user"
-    style="margin-right: 0.5rem;"></i></a><a href="/seoservices/" class="btn"><i class="fas fa-globe"
-    style="margin-right: 0.5rem;"></i></a><a href="/quickseo/" class="btn"><i class="fas fa-bolt"
-    style="margin-right: 0.5rem;"></i></a><a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt"
-    style="margin-right: 0.5rem;"></i></a></div>
+<div style="text-align: right; margin-bottom:25px;" class="nav">
+  <a href="/" class="btn"><i class="fas fa-home" style="margin-right: 0.5rem;"></i>Home</a>
+  <a href="/about/" class="btn"><i class="fas fa-user" style="margin-right: 0.5rem;"></i>About</a>
+  <a href="/seoservices/" class="btn"><i class="fas fa-globe" style="margin-right: 0.5rem;"></i>SEO Services</a>
+  <a href="/quickseo/" class="btn"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i>Try Quick SEO</a>
+  <a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt" style="margin-right: 0.5rem;"></i>SEO Blog</a>
+  <a href="/webdesignservices/" class="btn"><i class="fas fa-laptop-code" style="margin-right: 0.5rem;"></i>Web Design</a>
+  <a href="/graphicdesignservices/" class="btn"><i class="fas fa-paint-brush" style="margin-right: 0.5rem;"></i>Graphic Design</a>
+  <a href="mailto:robert.calvin.dev@gmail.com" class="btn"
+  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Me </a><a
+  href="https://linkedin.com/in/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-linkedin-in"
+   style="margin-right: 0.5rem;"></i>LinkedIn</a><a href="https://github.com/robert-calvin-dev" class="btn"
+  target="_blank"><i class="fab fa-github" style="margin-right: 0.5rem;"></i>GitHub</a>
+</div>
+
+<div style="text-align: right; margin-bottom:25px;" class="nav2">
+  <a href="/" class="btn"><i class="fas fa-home" style="margin-right: 0.5rem;"></i></a>
+  <a href="/about/" class="btn"><i class="fas fa-user" style="margin-right: 0.5rem;"></i></a>
+  <a href="/seoservices/" class="btn"><i class="fas fa-globe" style="margin-right: 0.5rem;"></i></a>
+  <a href="/quickseo/" class="btn"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i></a>
+  <a href="/seoblog/" class="btn"><i class="fas fa-pencil-alt" style="margin-right: 0.5rem;"></i></a>
+  <a href="/webdesignservices/" class="btn"><i class="fas fa-laptop-code" style="margin-right: 0.5rem;"></i></a>
+  <a href="/graphicdesignservices/" class="btn"><i class="fas fa-paint-brush" style="margin-right: 0.5rem;"></i></a>
+<a href="mailto:robert.calvin.dev@gmail.com" class="btn"
+  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i></a><a href="https://linkedin.com/in/robert-calvin-dev"
+  class="btn" target="_blank"><i class="fab fa-linkedin-in" style="margin-right: 0.5rem;"></i></a><a
+  href="https://github.com/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-github"
+   style="margin-right: 0.5rem;"></i></a>
+</div>
+
    <img
  style="width: 100%; box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);"
  src="/assets/images/FULL STACK SEO SPECIALIST (1).png">
@@ -26,17 +44,9 @@ insertHeader();
 function insertFooter() {
  const footerHTML = `
 
-<div style="text-align: right; margin-top:25px;" class="nav"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
-  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Me </a><a
-  href="https://linkedin.com/in/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-linkedin-in"
-   style="margin-right: 0.5rem;"></i>LinkedIn</a><a href="https://github.com/robert-calvin-dev" class="btn"
-  target="_blank"><i class="fab fa-github" style="margin-right: 0.5rem;"></i>GitHub</a></div>
 
-<div style="text-align: right; margin-top:25px;" class="nav2"><a href="mailto:robert.calvin.dev@gmail.com" class="btn"
-  target="_blank"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i></a><a href="https://linkedin.com/in/robert-calvin-dev"
-  class="btn" target="_blank"><i class="fab fa-linkedin-in" style="margin-right: 0.5rem;"></i></a><a
-  href="https://github.com/robert-calvin-dev" class="btn" target="_blank"><i class="fab fa-github"
-   style="margin-right: 0.5rem;"></i></a></div>
+
+
 
 <footer
  style="background-color: var(--charcoal); border: 1px solid var(--gray-border); box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); padding: 3rem 2rem; margin-top: 5rem;">
